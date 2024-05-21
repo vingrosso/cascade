@@ -1,251 +1,230 @@
 /*
 ;; File: screen.css
-;; Note: Inspired from that of FDTC (http://conferenze.dei.polimi.it/FDTC12/index.html),
-;;       written by Marc Joye.
-;; Note: check with http://jigsaw.w3.org/css-validator/
+;; Note: Inspired from that of COSADE (https://cosade.org/) and Cardis (https://cardis.org/),
+;;       written by Vincent Grosso.
+;; Last Modified : April 2024
 */
 
-body{font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; color:#20204a;
-	 background: url(../img/bg_top_cosade_main_2024.png) no-repeat;}
-	 
-	 
-h1 { color:#1b1464; font-variant: small-caps; LETTER-SPACING: 5px; text-align: center; font-size: 28px;}
-h2 { color:#1b1464; text-align: left; font-size: 20px; border-bottom: 1px solid #8cc63f;}
-h3 { color:#1b1464; text-align: left; font-size: 16px;}
-h4 { color:#0071bc; text-align:left; font-size: 16px; font-weight:bold; font-style:italic;} 
-h5 { color:#0071bc; text-align:left; font-size: 14px; font-weight:bold; font-style:italic;} 
-p{
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; text-align: justify; font-size: 14px; color:#20204a;
+header {
+    background-image: url(../Image/Banner1.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 30vh;
 }
+
+
+
+/* Container for flexboxes */
+.main_content {
+    display: -webkit-flex;
+    display: flex;
+}
+
+body{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    font-size: 12px; 
+    margin: 0px;
+    color:#20204a;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 150px;
+  max-width: 200px;
+  color: #20204a;
+  text-align: right;
+  vertical-align: top;
+  background-color: #EB8DE0;
+  padding: 1.5em;
+}
+
+nav .nav_section {
+  border-bottom: 1px dotted #808080;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+}
+
+nav a, .nav_section_header {
+  display: block;
+  color: #20204a;
+  line-height: 1.6em;
+  text-decoration: none;
+
+  padding-top: 1px;
+  padding-right: 0px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+}
+
+nav .nav_section_header {
+      font-weight: bold;
+}
+
+nav a:hover {
+  color: #808080;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  margin: 0px auto 0 auto;
+  color: black;
+  background-color: white;
+  padding: 1em;
+}
+
+
+
+sponsor {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 200px;
+  min-width: 100px;
+  color: #20204a;
+  text-align: right;
+  vertical-align: top;
+  background-color: white;
+  padding: 1.5em;
+}
+
+sponsor .sponsor_section {
+  border-bottom: 1px dotted #808080;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+}
+
+sponsor a, .sponsor_section_header {
+  display: block;
+  color: #20204a;
+  line-height: 1.6em;
+  text-decoration: none;
+
+  padding-top: 1px;
+  padding-right: 0px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+}
+
+sponsor .nav_section_header {
+      font-weight: bold;
+}
+
+
+strong {
+      font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+    background-color: #808080;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+article a, footer a {
+    color: #004e92;
+}
+
+
+
+  
+h1 { 
+    color:#314876; 
+    font-variant: small-caps; 
+    LETTER-SPACING: 2.5px; 
+    text-align: center; 
+    font-size: 28px;}
+    
+    
+h2 { 
+    color:#1b1464; 
+    text-align: left; 
+    font-size: 20px; 
+    border-bottom: 2px solid #de2c24;
+}
+    
+    
+p{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	text-align: justify; 
+	font-size: 14px; 
+	color:#20204a;
+}
+
 ul{
-	color:#1b1464; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 15px;
+	color:#1b1464; 
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	font-size: 15px;
+	text-align:left;
 }
 
 ol{
-	color:#1b1464; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 15px, text-align:left;
+	color:#1b1464; 
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	font-size: 15px; 
+	text-align:left;
 }
 
 
 a img
 {
-border: none;
+    border: none;
 }
-
-
-
-table {
-	border-top:   2px solid #0071bc;
-	border-right: 2px solid #0071bc;
-	border-bottom: 2px solid #0071bc;
-	border-left:  2px solid #0071bc;
-	/* top, right, bottom, left */
-	padding:1px;
-	background-color:#FFF;
-}
-
-#table1 {
-	text-align:left;
-	border-top:   2px solid #0071bc;
-	border-right: 2px solid #0071bc;
-	border-bottom: 2px solid #0071bc;
-	border-left:  2px solid #0071bc;
-	/* top, right, bottom, left */
-	padding:1px;
-	background-color:#FFFFFF;
-	width:100%;
-	border-collapse:collapse;	
-}
-
-#table1 tr.alt td 
-	{
-	background-color:#EAF2D3;
-	}
-
-#table1 td
-	{border: 1px solid blue;
-	vertical-align:center;
-	padding-left:5px;
-	padding-top:0px;
-	padding-right:5px;	
-}
-
-#table2 {
-	text-align:left;
-	border-top:   2px solid #0071bc;
-	border-right: 2px solid #0071bc;
-	border-bottom: 2px solid #0071bc;
-	border-left:  2px solid #0071bc;
-	/* top, right, bottom, left */
-	padding:1px;
-	background-color:#FFFFFF;
-	width:100%;
-	border-collapse:collapse;	
-}
-
-#table2 tr.alt td 
-	{
-	background-color:#EAF2D3;
-	}
-
-#table2 td
-	{border: 1px solid blue;
-	vertical-align:center;
-	padding-left:5px;
-	padding-top:0px;
-	padding-right:5px;	
-}
-
-#date{
-	color:#de2c24; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; text-align: center; font-size: 24px;
-}
-
-#copyright {
-	font-size: 9px;
-	font-style:italic;
-	color: #888;
-}
-#copyright a:link    {color:#888; text-decoration:none;      } /*  unvisited link */
-#copyright a:visited {color:#888; text-decoration:none;      } /*    visited link */
-#copyright a:hover   {color:#888; text-decoration:underline; } /* mouse over link */
-#copyright a:active  {color:#888; text-decoration:underline; } /*   selected link */ 
-
-#diapo {text-align: center; margin-bottom: 30px;}
-#diapo a img {
-  border: none; text-decoration: none;
-  vertical-align: middle;}
-
-#main {
-	background-color: #f8f8f8;
-	background: url("../img/cosade_theme.png") no-repeat #f8f8f8 right bottom ; 
-	/* bottom: see footer */
-	border-top:   1px solid #de2c24;
-	/*border-right: 1px solid #de2c24;
-	border-left:  1px solid #de2c24;
-	/* top, right, bottom, left */
-	/*background-image: #fff url(cosade_theme.png) no-repeat bottom right;*/
-	margin: 120px 230px 0px 230px;
-	width: 600px;   /* avant : 800px */
-	padding: 10px;
-	min-height: 480px;
-	height:auto !important;
-	height: 480px;
-}
-html>body #main { 
-	font-family: Verdana, Arial sans-serif;
-    height: auto;}
-
-#main a:hover  {background-color:#ccc;}
-#main a:active {background-color:#888;}
-/* TODO: how no to have these two in #copyright ? */
- 
-#footer {
-  clear: both; margin-bottom: 1px;
-  /* Width = width + 2*padding + border-left + border-right */
-  width: 822px; margin-left: 215px; border-top: 1px solid #ccc;
-  font-size: 11px; font-weight: bold; color: #888; text-align: center;}
-
-#cosade_title {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 24px; font-weight: bold; color: #0071bc; text-align: center;
-	padding: 7px;
-	}
-#cosade_img {
-	background-image:url(../img/cosade_oeil.png) no-repeat ; padding-left:20px;
-}
-#cosade_menu {
-	margin: 10px;
-	width: 200px;
+#cascade_menu {  
+	background-color: #B942AB;
+	margin: 0px;
+	width: 150px;
+	height: auto;
 	float: left;
-	position: absolute;
-	top: 432px;
-	left: 20px;
+	position: fixed;
+	vertical-align: top;
 }
 
 
-#cosade_menu ul {
-	background-color: #f8f8f8;
-	border-top: 4px solid #de2c24;
+#cascade_menu ul { 
+	background-color: #EB8DE0;
+	border-top: 2px solid #de2c24;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+    float: left;
 	position: fixed; /* avant fixed */
-	top: 110px;  /* avant 110px */
-	left: 28px;
-	width: 200px;
+    /*top: 40px; 
+    left: 5px; */
+    width: 150px;
+    vertical-align: top;
 } 
 
-#cosade_menu li a {
-	height: 32px;
-	voice-family: "\"}\""; 
-	voice-family: inherit;
-	height: 24px;
-	text-decoration: none;
-	border-bottom:  1px;
-	border-top-style: 1px dotted solid ; border-width: thin ; border-color:silver;
-} 
-
-#cosade_menu li a:link, #cosade_menu li a:visited {
-	color: #20204a;
-	display: block;
-	background: url(../img/cosade_menu_1.gif);
-	padding: 8px 0 0 30px;
+#main {
+	border-top:   2px solid #de2c24;
+	width: auto;   /* avant : 800px */
+	padding: 10px;
+	height:auto !important;
 }
 
-#cosade_menu li a:hover, #cosade_menu li a:active {
-	color: #1b1464;
-	font-weight:bold;
-	background: url(../img/cosade_menu_2.gif);
-	padding: 8px 0 0 30px;
+
+
+#footer {
+    clear: both; 
+    margin-bottom: 1px;
+    /* Width = width + 2*padding + border-left + border-right */
+    width: 100vw; 
+    border-top: 1px solid #ccc;
+    font-size: 11px; 
+    font-weight: bold; 
+    color: #888; 
+    text-align: center;
 }
-
-.floatleft { float: left; padding:5px;}
-
-.floatright bottom { float: right bottom ; }
-
-.identifiant{
-    /* SAFARI TRES VIELLE VERSION < 2.1 */
-    -khtml-opacity:0.1;
-/* FIREFOX TRES VIELLE VERSION <= 0.9*/
-    -moz-opacity : 0.1;
-/* IE 8 ET COMPRIS PAR IE 10*/
-    -ms-filter: "alpha(opacity=10)";
-/* IE > 4 et < 8 ET COMPRIS PAR IE 10*/
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=10);
-/* IE 4 */
-    filter : alpha(opacity=10);
-/* AUTRE */
-    opacity : 0.1;
-  }
-
-
-
-#cosade_menu_right {
-	background-color: #f8f8f8;
-	border-top: 4px solid #de2c24;
-	margin: 10px;
-	width: 200px;
-	float: left;
-	position: relative; /* avant fixed */
-	top: -10px; /* avant 110 */
-	left: 848px; /* avant 28px */
-	height: auto; /* 730px;*/
- }
-
-#cosade_blink_red{
-	font-size: 24px;
-	font-weight: bold;
-	color: red;
-	text-align: center;
-	text-decoration:blink
-	}
-#cosade_red{
-	font-size: 24px;
-	font-weight: bold;
-	color: red;
-	text-align: center;
-	}
-
-.redtext{color:#FF0000}
-
-.timecol { vertical-align:center;}
-
