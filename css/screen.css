@@ -39,7 +39,7 @@ nav {
   color: #20204a;
   text-align: right;
   vertical-align: top;
-  background-color: #28593D;
+  background-color: #358055;
   padding: 1.5em;
 }
 
@@ -184,7 +184,7 @@ a img
     border: none;
 }
 #cascade_menu {  
-	background-color: #B942AB;
+	background-color: #358055;
 	margin: 0px;
 	width: 150px;
 	height: auto;
@@ -195,7 +195,7 @@ a img
 
 
 #cascade_menu ul { 
-	background-color: #28593D;
+	background-color: #358055;
 	border-top: 2px solid #de2c24;
 	list-style: none;
 	margin: 0;
