@@ -202,7 +202,7 @@ a img
 	width: 150px;
 	height: auto;
 	float: left;
-	position: fixed;
+	/*position: fixed;*/
 	vertical-align: top;
 }
 
@@ -214,7 +214,7 @@ a img
 	margin: 0;
 	padding: 0;
     float: left;
-	position: fixed; /* avant fixed */
+	/*position: fixed;  avant fixed */
     /*top: 40px; 
     left: 5px; */
     width: 150px;
