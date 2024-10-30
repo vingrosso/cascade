@@ -1,4 +1,4 @@
-plugins:
+plugins
   - jekyll-redirect-from
   #- jekyll-feed
   #- jekyll-sitemap
