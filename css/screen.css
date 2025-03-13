@@ -274,4 +274,6 @@ table {
     text-align: center;
 }
 
-.timecol { vertical-align:center;}
+.timecol { vertical-align:center;
+
+  min-width: 100px;}
