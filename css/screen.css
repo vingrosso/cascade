@@ -175,7 +175,11 @@ h5 {
     text-align: left; 
     font-size: 16px; 
 }
-    
+  
+  
+a{
+	font-size: 16px; 
+}
     
 p{
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
