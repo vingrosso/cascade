@@ -1,0 +1,289 @@
+/*
+;; File: screen.css
+;; Note: Inspired from that of COSADE (https://cosade.org/) and Cardis (https://cardis.org/),
+;;       written by Vincent Grosso.
+;; Last Modified : April 2024
+*/
+
+header {
+    background-image: url(../Image/ban2.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 30vh;
+}
+
+
+
+/* Container for flexboxes */
+.main_content {
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+body{
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+    font-size: 12px; 
+    margin: 0px;
+    color:#20204a;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 150px;
+  max-width: 200px;
+  color: #20204a;
+  text-align: right;
+  vertical-align: top;
+  background-color: #358055;
+  padding: 1.5em;
+}
+
+nav .nav_section {
+  border-bottom: 1px dotted #808080;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+}
+
+nav a, .nav_section_header {
+  display: block;
+  color: #20204a;
+  line-height: 1.6em;
+  text-decoration: none;
+
+  padding-top: 1px;
+  padding-right: 0px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+}
+
+nav .nav_section_header {
+      font-weight: bold;
+}
+
+nav a:hover {
+  color: #808080;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  margin: 0px auto 0 auto;
+  color: black;
+  background-color: white;
+  padding: 1em;
+}
+
+
+
+sponsor {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 200px;
+  min-width: 100px;
+  color: #20204a;
+  text-align: right;
+  vertical-align: top;
+  background-color: white;
+  padding: 1.5em;
+}
+
+sponsor .sponsor_section {
+  border-bottom: 1px dotted #808080;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+}
+
+sponsor a, .sponsor_section_header {
+  display: block;
+  color: #20204a;
+  line-height: 1.6em;
+  text-decoration: none;
+
+  padding-top: 1px;
+  padding-right: 0px;
+  padding-bottom: 1px;
+  padding-left: 0px;
+}
+
+sponsor .nav_section_header {
+      font-weight: bold;
+}
+
+
+strong {
+      font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+    background-color: #808080;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+article a, footer a {
+    color: #004e92;
+}
+
+
+
+  
+h1 { 
+    color:#314876; 
+    font-variant: small-caps; 
+    LETTER-SPACING: 2.5px; 
+    text-align: center; 
+    font-size: 28px;}
+    
+    
+h2 { 
+    color:#314876; 
+    text-align: left; 
+    font-size: 24px; 
+    border-bottom: 2px solid #de2c24;
+}
+
+h3 { 
+    color:#314876; 
+    text-align: left; 
+    font-size: 20px; 
+    border-bottom: 1px solid #de2c24;
+}
+
+h4 { 
+    color:#314876; 
+    text-align: left; 
+    font-size: 18px; 
+}
+
+h5 { 
+    color:#314876; 
+    text-align: left; 
+    font-size: 16px; 
+}
+  
+  
+a{
+	font-size: 20px; 
+}
+    
+p{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	text-align: justify; 
+	font-size: 14px; 
+	color:#20204a;
+}
+
+ul{
+	color:#1b1464; 
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	font-size: 15px;
+	text-align:left;
+}
+
+ol{
+	color:#1b1464; 
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	font-size: 15px; 
+	text-align:left;
+}
+
+
+a img
+{
+    border: none;
+}
+
+table {
+	border-top:   2px solid #0071bc;
+	border-right: 2px solid #0071bc;
+	border-bottom: 2px solid #0071bc;
+	border-left:  2px solid #0071bc;
+	/* top, right, bottom, left */
+	padding:1px;
+	background-color:#FFF;
+}
+
+#table1 {
+	text-align:left;
+	border-top:   2px solid #0071bc;
+	border-right: 2px solid #0071bc;
+	border-bottom: 2px solid #0071bc;
+	border-left:  2px solid #0071bc;
+	/* top, right, bottom, left */
+	padding:1px;
+	background-color:#FFFFFF;
+	width:100%;
+	border-collapse:collapse;	
+}
+
+#table1 tr.alt td 
+	{
+	background-color:#EAF2D3;
+	}
+
+
+
+#cascade_menu {  
+	background-color: #358055;
+	margin: 0px;
+	width: 150px;
+	height: auto;
+	float: left;
+	/*position: fixed;*/
+	vertical-align: top;
+}
+
+
+#cascade_menu ul { 
+	background-color: #358055;
+	border-top: 2px solid #de2c24;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    float: left;
+	/*position: fixed;  avant fixed */
+    /*top: 40px; 
+    left: 5px; */
+    width: 150px;
+    vertical-align: top;
+} 
+
+#main {
+	border-top:   2px solid #de2c24;
+	width: auto;   /* avant : 800px */
+	padding: 10px;
+	height:auto !important;
+}
+
+
+
+#footer {
+    clear: both; 
+    margin-bottom: 1px;
+    /* Width = width + 2*padding + border-left + border-right */
+    width: 100vw; 
+    border-top: 1px solid #ccc;
+    font-size: 11px; 
+    font-weight: bold; 
+    color: #888; 
+    text-align: center;
+}
+
+.timecol { vertical-align:center;
+
+  min-width: 100px;}
