@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<script src="js/jquery.js"></script> 
+<script> 
+  $(function(){
+    $("#sponsors_content").load("includes/sponsors.html"); 
+  });
+  $(function(){
+    $("#left_menu_content").load("includes/left_menu.html"); 
+  });
+</script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>COSADE: Constructive Side-Channel Analysis and Secure Design 2023</title>
+<meta name="description" content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="keywords"    content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="copyright"   content="Università della Svizzera italiana" />
+<meta http-equiv="Content-Language" content="en" />
+<link media="screen" href="css/screen.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link media="print"  href="css/print.css"  type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<body>
+
+<div id="sponsors_content"></div>
+
+<div id="main">
+
+<!-- ========== Page-specific contents begin ========== -->
+<h1>Invited Talks</h1>
+
+
+<h2 id="keynoteMendel">Keynote 1</h2>
+
+<h3>Composable masking schemes</h3>
+
+<h3>Speaker: Gaëtan Cassiers</h3>
+
+<h3>Abstract</h3>
+<p>
+  Masking is a popular countermeasure against side-channel attacks such a power or electromagnetic analysis. Its security is commonly analyzed in the threshold probing model which provides a simple theoretical backing for the empirical notion of security order. While functionally-correct masked circuits are easily built from the composition of small gadgets that implement simple function (e.g., logic gates), ensuring the security of a large circuit can be a difficult task since, in general, the composition of threshold-probing secure gadgets is not a secure masked circuit.
+</p>
+<p>
+This talk covers the main contributions of the last two decades in the field of threshold probing security. We start from the probing model and its relationship to practical security which, along with its tractability in security proofs, motivates its widespread usage. Focusing on the issue of composition, we will then dive into the state-of-the-art security definitions (simulatability, (strong) non-interference ((S)NI), probe-isolating non-interference (PINI)...), showing how they enable secure composition and how to analyze the security of gadgets within this framework. We will finally discuss the most recent advances in the field, including the security against glitches and transitions for hardware implementations, automated masking generation/verification, and the masking of post-quantum cryptography.
+</p>
+
+
+<h3>Short Bio</h3>
+<p>Gaëtan Cassiers is currently is postdoctoral researcher at UCLouvain. His research focuses on the analysis and design of side-channel countermeasures, most prominently on masking techniques. His contributions range from theoretical constructions and proofs to masked implementation of cryptographic algorithms in hardware and in software. He is a co-designer of the Spook submission to the NIST LWC competition and co-organized the CHES 2020 and 2023 challenges. In 2022 Gaëtan co-founded the SIMPLE-Crypto (non-profit) association that promotes open-source in the field of cryptography with physical security. He is a developer and maintainer of two SIMPLE-Crypto projects: SCALib, a side-channel security evaluation library and SMAesH, a masked implementation of the AES.
+</p>
+
+
+<h2 id="keynoteMendel">Keynote 2</h2>
+
+<h3>Electromagnetic Eavesdropping: Passive and Active Measurement Techniques in Practical Scenarios</h3>
+
+<h3>Speaker: Yuichi Hayashi</h3>
+
+<h3>Abstract</h3>
+<p>
+  Electromagnetic analysis (EMA) is affected by the measurement quality of electromagnetic (EM) waves. The EM waves used in EMA are those emitted outside the target device from paths unintended by the designer. Therefore, to measure such EM precisely, it is useful to understand the mechanism by which EM waves are unintentionally radiated outside of the devices.
+</p>
+<p>
+  This talk will discuss the mechanism of unintentional EM emission from devices from the perspective of electromagnetic compatibility and explain how EM waves should be measured based on the mechanism.
+</p>
+<p>
+  To show this process, we will focus on TEMPEST as an example to intuitively understand the availability of information from EM leakage, but the measurement method used here can also be applied to EM measurement in EMA.
+</p>
+<p>
+  On the other hand, some devices emit weak EM waves, which potentially makes them resistant to attacks using EM waves.  Therefore, with passive EM wave measurement, obtaining the information necessary for analysis may not be possible. For such devices resistant to passive measurement, we will also introduce a method of actively irradiating EM waves to force the emission of EM waves containing internal information and then measuring those waves to extract information.
+</p>
+
+<h3>Short Bio</h3>
+<p>Yuichi Hayashi is a Professor at Nara Institute of Science and Technology. His research interests include electromagnetic compatibility and hardware security. 
+  He is the chair of the EM information leakage subcommittee in IEEE EMC Technical Committee 5. He has been recognized through many awards and honors, including the 
+  IEEE International Symposium on Electromagnetic Compatibility Best Symposium Paper Award (2013), Workshop on Cryptographic Hardware and Embedded Systems Best Paper Award (2014), and IEEE Electromagnetic Compatibility 
+  Society Technical Achievement Award (2021).
+</p>
+
+
+
+<!-- ========== Page-specific contents end ========== -->
+
+
+<footer>
+</footer>
+</div>
+
+<!-- </div> -->
+<!-- end of main content -->
+
+<div id="left_menu_content"></div>
+
+
+</body>
+
+</html>

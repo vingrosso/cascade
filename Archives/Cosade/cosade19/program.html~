@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>COSADE: Constructive Side-Channel Analysis and Secure Design 2019</title>
+<meta name="description" content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="keywords"    content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="copyright"   content="Télécom ParisTech" />
+<meta http-equiv="Content-Language" content="en" />
+<link media="screen" href="css/screen.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link media="print"  href="css/print.css"  type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+</head>
+<body>
+
+<div id="cosade_menu_right">
+<div style="text-align:center">
+<br />
+<a href="https://www.iacr.org/" target="blank">
+<img src="img/logo_iacr.png" alt="IACR" />
+<br />
+<br />
+<a href= "http://www.springer.com/">
+<img src="img/springer_logo.jpg" height="35px" alt="SPRINGER" /></a>
+<br />
+<a href= "http://www.springer.com/lncs" target="blank">
+<img src="img/lncs.jpg" height="40px" alt="LNCS" /></a>
+<P>
+
+
+
+<div id="cosade_title">sponsored by:</div>
+<br />
+<!-- <br />
+
+    <B><font color="lime">PLATIN SPONSORS</font></B>
+<br />
+<br /> -->
+
+    <B><font color="red">GOLD SPONSORS</font></B>
+<br />
+<br />
+<a href= "http://www.riscure.com/" target="blank"><img src="img/logo_riscure2016.jpg" height="51px" alt="Riscure"/></a>
+<br />
+<a href= "http://www.eshard.com/" target="blank"><img src="img/logo_eshard.png" width="121px" alt="eshard"/></a>
+<br />
+<a href= "https://fortifyiq.com/" target="blank"><img src="img/logo_fortifyiq.png" width="121px" alt="FortifyIQ"/></a>
+<br />
+<a href= "http://www.secure-ic.com/" target="blank"><img src="img/logo_sic.png" width="211px" alt="Secure-IC" /></a>
+<br />
+<br />
+    <B><font color="blue">SILVER SPONSORS</font></B>
+<br />
+<br />
+<a href="http://www.rambus.com/security" target="blank"><img src="img/logo_cri2016.png" height="51px" alt="Rambus" /></a>
+<br />
+<br />
+<a href="http://www.alphanov.com" target="blank"><img src="img/logo_alphanov.png" width="129px" alt="ALPhANOV" /></a>
+<br /><br />
+
+</div>
+</div>
+
+<div id="main">
+<!-- ========== Page-specific contents begin ========== -->
+<h1>Preliminary Program</h1>
+
+<!--
+<br />
+<center>
+<a href="/presentations/" target="_blank">Presentation Slides Download</a>
+</center>
+<br />
+<br />
+-->
+
+<h2>Wednesday, April 3</h2>
+<!--Registration at <a href="venue.html">TBD</a> starts at TBD. -->
+ 
+<h3>9:00-16:00 Hands-on course: Evaluating Security during 
+Software and Hardware Cryptography Design – Use Cases</h3>
+<p>Offered by Secure-IC.<br> 
+Separate registration and payment is required - please use the link
+<a href="http://www.secure-ic.com/one-day-tutorial-03-04-2019-darmstadt-co-located-with-cosade/" target="blank">
+http://www.secure-ic.com/one-day-tutorial-03-04-2019-darmstadt-co-located-with-cosade/</a> 
+<br>
+Course content: Learn advanced analysis methods with Secure-IC experts, 
+using Analyzr<sup>TM</sup>, Virtualyzr<sup>TM</sup> and Catalyzr<sup>TM</sup> tools.
+</p>
+<h3>17:00 Welcome reception in the <a href="https://www.hlmd.de/" target="blank">Hessisches Landesmuseum
+Darmstadt</a>, including a museum tour.</h3>
+
+<h2>Thursday, April 4, 8:45</h2>
+<h3>Conference at <a href="venue.html">Darmstadtium</a></h3>
+
+<table id="table1">
+<!--<tr class="alt">
+<td>08:00</td>
+<td><h4>Registration Opens</h4></td>
+</tr> -->
+
+<tr class="alt">
+<td class="timecol">9:00</td>
+<td><h4>Opening and Welcome Address</h4>
+<p>Stefan Katzenbeisser (TU Darmstadt, DE), Ilia Polian (University of Stuttgart, DE),
+Marc Stöttinger (Continental AG, DE)
+</p>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">9:30</td>
+<td><h4>Keynote</h4>
+<p>Onur Mutlu, ETH Zurich<br>
+<b><a href="keynotes.html#keyn1"> RowHammer and Beyond</a></b>
+</p></td>
+</tr>
+
+<tr>
+<td class="timecol">10:30</td>
+<td><h4>Keynote</h4>
+<p>Ramesh Karri, New York University<br>
+<b><a href="keynotes.html#keyn2">Towards High-Level Approaches to Hardware Cyber Security</a></b>
+</p>
+</td>
+</tr>
+
+<tr class="alt"><td>11:30</td><td>
+  <h4>Coffee Break</h4></td>
+</tr>
+
+<tr>
+<td class="timecol"><h4>12:00</h4></td>
+<td>
+  <h4>Session 1: Side-Channel Attacks</h4>
+  <!-- <h5>Session chair:</h5> -->
+</td>
+</tr>
+
+<tr>
+<td class="timecol">12:00</td>
+<td>
+        <p>
+                <b>Fast Side-Channel Security Evaluation of ECC Implementations – Shortcut Formulas for Horizontal
+                 Side-channel Attacks against ECSM with the Montgomery ladder</b><br />
+                 Melissa Azouaoui (Université Catholique de Louvain, BE / NXP Semiconductors, DE), Romain Poussier (Nanyang Technological University, SG),
+                 François-Xavier Standaert (Université Catholique de Louvain, BE)
+        </p>
+</td>
+</tr>
+<tr>
+<td class="timecol">12:30</td>
+<td>
+        <p>
+                <b>Side-Channel Analysis of the TERO PUF </b><br />
+                Lars Tebelmann (TU Munich, DE), Michael Pehl (TU Munich, DE), Vincent Immler (Fraunhofer AISEC, Munich, DE)
+        </p>
+</td>
+</tr>
+
+<tr class="alt">
+<td>13:00</td>
+<td><h4>Lunch</h4></td>
+</tr>
+
+<tr>
+<td><h4>14:30</h4></td>
+<td>
+        <h4>Session 2: Fault-Injection Attacks</h4>
+        <!-- <h5>Session chair:</h5> -->
+</td>
+</tr>
+
+<tr>
+<td class="timecol">14:30</td>
+<td>
+        <p>
+                <b>FIMA: Fault Intensity Map Analysis </b><br />
+                Keyvan Ramezanpour, Paul Ampadu, William Diehl (Virginia Tech, US)
+        </p>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">15:00</td>
+<td>
+        <p>
+                <b>Differential Fault Attacks on KLEIN</b><br />
+                Michael Gruber (TU Munich, DE), Bodo Selmke (Fraunhofer AISEC, Munich, DE)
+        </p>
+</td>
+</tr>
+
+<tr class="alt">
+<td>15:30</td>
+<td><h4>Coffee Break</h4></td>
+</tr>
+
+
+<tr>
+<td class="timecol"><h4>16:00</h4></td>
+<td>
+        <h4>Session 3: Whitebox Attacks</h4>
+        <!-- <h5>Session chair:</h5> -->
+
+</td>
+</tr>
+
+<tr>
+<td class="timecol">16:00</td>
+<td>
+        <p>
+                <b>Another Look on Bucketing Attack to Defeat White-Box Implementations</b><br />
+                Houssem Maghrebi (UL Identity Management & Security, FR), Mohamed Zeyad (Trusted Labs, FR),
+                Davide Alessio (UL Identity Management & Security, FR), Boris Batteux
+                (eShared, FR)
+        </p>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">16:30</td>
+<td>
+        <p>
+                <b>Higher-Order DCA against Standard Side-Channel Countermeasures</b><br />
+                Andrey Bogdanov (Technical University of Denmark, DK), Matthieu Rivain (CryptoExperts, FR),
+                Philip S. Vejre (Technical University of Denmark, DK), Junwei Wang
+                (CryptoExperts, University of Luxembourg, Univ. Paris 8, FR)
+        </p>
+</td>
+</tr>
+
+<tr class="alt">
+<td>17:00</td>
+<td><h4>Break</h4></td>
+</tr>
+
+
+<tr class="alt">
+<td class="timecol"><h4>18:30</h4></td>
+<td>
+        <h4>Social Event – 10 Years of COSADE</h4>
+        <h5>Moderation: Jean-Luc Danger (Telecom Paris, FR) and Werner Schindler (BSI, DE)<br>
+            Invited speaker: Sorin Huss (TU Darmstadt, DE)</h5> 
+</td>
+</tr>
+</table>
+
+
+<h2>Friday, April 5</h2>
+<h3>Conference at <a href="venue.html">Darmstadtium</a> </h3>
+
+<table id="table2">
+<tr class="timecol">
+<td><h4>09:00</h4></td>
+<td>
+        <h4>Invited Talk</h4>
+        <!-- <h5>Session chair:</h5> -->
+        <p>
+        Sylvain Guilley, Secure IC<br>
+        <b>Cache-timing Attack Detection and Prevention, Application on Crypto Libs and PQC</b>
+        </p>
+
+</td>
+</tr>
+<tr>
+<td><h4>9:30</h4></td>
+<td>
+        <h4>Session 4: Side Channel Analysis Methodologies</h4>
+        <!-- <h5>Session chair:</h5> -->
+
+</td>
+</tr>
+
+<tr>
+<td class="timecol">9:30</td>
+<td>
+        <p>
+                <b>Gradient Visualization for General Characterization in Profiling Attacks</b><br />
+                Loïc Masure (CEA Leti, FR), Cécile Dumas (CEA Leti, FR), Emmanuel Prouff (ANSSI, FR)
+        </p>
+</td>
+</tr>
+<tr>
+<td class="timecol">10:00</td>
+<td>
+        <p>
+                <b>Fast Analytical Rank Estimation </b><br />
+                Liron David, Avishai Wool (Tel-Aviv University, IL)
+        </p>
+</td>
+</tr>
+
+
+<tr class="alt">
+<td>10:30</td>
+<td><h4>Coffee Break</h4></td>
+</tr>
+<tr class="timecol">
+<td><h4>11:00</h4></td>
+<td>
+        <h4>Session 5: Security Aspects of Post-Quantum Schemes</h4>
+        <!-- <h5>Session chair:</h5> -->
+
+</td>
+</tr>
+<tr>
+<td class="timecol">11:00</td>
+<td>
+        <p>
+        <b>Fault Attacks on UOV and Rainbow </b><br />
+	      Juliane Krämer, Mirjam Loiero (TU Darmstadt)
+        </p>
+</td>
+</tr>
+<tr>
+<td class="timecol">11:30</td>
+<td>
+        <p>
+        <b>Towards Optimized and Constant-Time CSIDH on Embedded Devices </b><br />
+        Amir Jalali (Florida Atlantic University, US), Reza Azarderakhsh (Florida Atlantic
+        University, US), Mehran Mozaffari Kermani (University of South Florida, US), David Jao
+        (University of Waterloo, CA)
+        </p>
+</td>
+</tr>
+<tr>
+<td class="timecol">12:00</td>
+<td>
+        <p>
+        <b>Number "Not Used" Once - Practical fault attack on pqm4 implementations of NIST candidates </b><br />
+        Prasanna Ravi (School of Computer Science and Engineering, NTU Singapore; Temasek Labs@NTU,
+        Singapore), Debapriya Basu Roy (IIT Kharagpur, IN), Shivam Bhasin
+        (Temasek Labs, NTU, SG), Anupam Chattopadhyay (Nanyang Technical University, SG), Debdeep
+        Mukhopadhyay (IIT Kharagpur, IN)
+        </p>
+</td>
+</tr>
+<tr class="alt">
+<td>12:30</td>
+<td><h4>Lunch</h4></td>
+</tr>
+
+<td><h4>14:00</h4></td>
+<td>
+        <h4>Session 6: Countermeasures Against Implementation Attacks</h4>
+        <!-- <h5>Session chair: </h5> -->
+
+</td>
+</tr>
+
+<tr>
+<td class="timecol">14:00</td>
+<td>
+        <p>
+                <b>Practical Evaluation of Masking for NTRUEncrypt on ARM Cortex-M4 </b><br />
+                Thomas Schamberger (TU Munich, DE), Oliver Mischke (Infineon Technologies, DE), Johanna
+                Sepulveda (TU Munich, DE)
+        </p>
+</td>
+</tr>
+<tr>
+<td class="timecol">14:30</td>
+<td>
+        <p>
+                <b>Shuffle and Mix: On the Diffusion of Randomness in Threshold Implementations of Keccak</b><br />
+                Felix Wegener, Christian Baiker, Amir Moradi (Ruhr University Bochum, DE)
+        </p>
+</td>
+</tr>
+<tr>
+<td class="timecol">15:00</td>
+<td>
+        <p>
+                <b>Trade-offs in Protecting Keccak against Combined Side-channel and Fault Attacks</b><br />
+                Antoon Purnal, Victor Arribas, Lauren De Meyer (KU Leuven, BE)
+        </p>
+</td>
+</tr>
+
+<tr class="alt">
+<td class="timecol">15:30</td>
+<td>
+        <p>
+        <h4>Closing and Farewell; Announcement of COSADE 2020</h4>
+        </p>
+</td>
+</tr>
+
+</table>
+
+<!-- ========== Page-specific contents end ========== -->
+
+<!-- end of main content -->
+<footer>
+<div style="text-align:center; font-size: smaller">
+<a href="https://www.darmstadt.de/darmstadt-erleben/fotos-von-darmstadt/" target="_blank">Photos: Mathildenhöhe from Ulrich Mathias, Altes Rathaus from Alex Deppert</a> 
+</div>
+
+</footer>
+</div>
+
+<!-- </div> -->
+<!-- end of main content -->
+
+<div id="cosade_menu">
+<!--<div id="cosade_title"><abbr lang="en" title="Constructive Side-Channel Analysis and Secure Design">COSADE</abbr>'2013</div>-->
+<ul>
+<li><a href="index.html" title="Home">Home</a></li>
+<li><a href="cfp.html" title="CfP">Call for papers</a></li>
+<li><a href="cfs.html" title="CfS">Call for sponsors</a></li>
+<li><a href="program.html" title="Program">Program</a></li>
+<!--<li><a href="proceedings/" title="Proceedings">Proceedings</a></li> -->
+<!--<li><a href="invited.html" title="Invited">Invited Speakers</a></li>-->
+<li><a href="keynotes.html" title="Keynotes">Keynotes</a></li>
+<li><a href="registration.html" title="Registration">Registration</a></li>
+<li><a href="venue.html" title="Venue">Venue & Logistics</a></li>
+<!--<li><a href="/callforshort.html" title="Call for short presentations">Call for short talk</a></li>-->
+<li><a href="committees.html" title="Committees">Committees</a></li>
+<li><a href="about.html" title="A propos">COSADE archives</a></li>
+<li><a href="contacts.html" title="Contacts">Contacts</a></li>
+<li><a href="proceedings/proceedings.html" title="Proceedings">Proceedings</a></li>
+</ul>
+
+
+<br />
+<div id="cosade_title">Organized by</div> 
+
+<div style="text-align:center">
+
+<a href="https://www.tu-darmstadt.de/" target="_blank" title="Technical University of Darmstadt">
+<br>Technische Universität Darmstadt<br>
+<img src="img/tudarmstadt_logo.png" alt="the Technical University of Darmstadt" /></a>
+
+
+<BR>
+<BR>
+<div id="cosade_title">Organized in collaboration with</div>
+
+<a href="http://www.crossing.tu-darmstadt.de/" target="_blank" title="SFB 1119 CROSSING - Technische Universität Darmstadt">
+<br>SFB 1119 CROSSING Technische Universität Darmstadt<br>
+<img src="img/crossing_logo.jpg" alt="Crossing" /></a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>COSADE: Constructive Side-Channel Analysis and Secure Design</title>
+<meta name="description" content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="keywords"    content="COSADE: Constructive Side-Channel Analysis and Secure Designe" />
+<meta name="copyright"   content="TELECOM ParisTech" />
+<meta http-equiv="Content-Language" content="en" />
+<link media="screen" href="css/screen.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<!--[if IE]>
+<link media="screen" href="./css/fix_ie.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<![endif]-->
+<link media="print"  href="css/print.css"  type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+</head>
+<body>
+
+<div id="cosade_menu_right">
+<center>
+<BR>
+<a href= "http://www.springer.com/">
+<img src="img/springer_logo.jpg" height="35px" alt="SPRINGER" /></a>
+<BR>
+<a href= "http://www.springer.com/lncs">
+<img src="img/lncs.jpg" height="40px" alt="LNCS" /></a>
+<P>
+
+<div id="cosade_title">sponsored  by</div>
+<BR>
+<center>
+<B><font color="red">GOLDEN SPONSORS</font></B>
+<BR>
+<a href= "http://www.ssi.gouv.fr/">
+<img src="img/logo_anssi.jpg" height="100px" alt="ANSSI" /></a>
+<BR>
+<a href= "http://www.cryptography.com/">
+<img src="img/CRI.png" height="60px" alt="Cryptography research" /></a>
+<BR>
+<a href= "http://www.secure-ic.com/">
+<img src="img/logo_sic.png" height="50px" alt="Secure-IC" /></a>
+<BR>
+<a href= "http://www.riscure.com/">
+<img src="img/logo_riscure.jpg" height="51px" alt="Riscure" /></a>
+<BR>
+<BR>
+<B><font color="blue">SILVER SPONSORS</font></B>
+<BR>
+<a href= "http://www.UL.com">
+<img src="img/UL.jpg" height="60px" alt="RFI Global" /></a>
+<BR>
+<a href= "http://www.invia.fr">
+<img src="img/logo_invia.jpg" height="40px" alt="INVIA" /></a>
+<BR>
+<a href= "http://www.serma-technologies.com">
+<img src="img/serma.jpg" height="65px" alt="SERMA" /></a>
+<BR>
+<a href= "http://www.technicolor.com">
+<img src="img/Logo_Technicolor_RVB3.png" height="60px" alt="Technicolor" /></a>
+<BR>
+<BR>
+<B><font color="blue">TWITTER</font></B>
+<BR>
+<!--<A href="https://twitter.com/COSADE_Workshop">Twitter account</A>-->
+
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+<a href="https://twitter.com/COSADE_Workshop" class="twitter-share-button">Tweet</a>
+
+</div>
+
+<div id="main">
+
+<!-- ========== Page-specific contents begin ========== -->
+
+<!-- vim:se syn=html: -->
+<h1>Committees</h1>
+
+<h2>Steering Committee</h2>
+
+<span style="font-style:normal">Sorin Huss</span>, <span style="font-style:italic">Technische Universitat Darmstadt, Germany</span>
+<br>
+<span style="font-style:normal">Werner Schindler</span>, <span style="font-style:italic">Bundesamt für Sicherheit in der Informationstechnik,Germany</span>
+
+
+<h2>Conference Chair</h2>
+<span style="font-style:normal">Jean-luc Danger</span>, <span style="font-style:italic">Télécom ParisTech, France</span>
+
+<h2>Program Chair</h2>
+
+<span style="font-style:normal">Emmanuel Prouff</span>, <span style="font-style:italic">ANSSI, France</span>
+
+<h2>Program Committee</h2>
+
+<span style="font-style:normal">Guido Bertoni</span>, <span style="font-style:italic">ST Microelectronics, Italy</span>
+<br>
+<span style="font-style:normal">Ray Cheung</span>, <span style="font-style:italic">City University of Hong Kong, Hong Kong</span>
+<br>
+<span style="font-style:normal">Jean-Sébastien Coron</span>, <span style="font-style:italic">Tranef, France</span>
+<br>
+<span style="font-style:normal">Cécile Dumas</span>, <span style="font-style:italic">CEA LETI, France</span>
+<br>
+<span style="font-style:normal">Hermann Drexler</span>, <span style="font-style:italic">Giesecke & Devrient, Germany</span>
+<br>
+<span style="font-style:normal">Benoit Feix</span>, <span style="font-style:italic">, Inside, France</span>
+<br>
+<span style="font-style:normal">Catherine Gebotys</span>, <span style="font-style:italic">University of Waterloo, Canada</span>
+<br>
+<span style="font-style:normal">Benedikt Gierlichs</span>, <span style="font-style:italic">K.U.Leuven, Belgium</span>
+<br>
+<span style="font-style:normal">Chirstophe Giraud</span>, <span style="font-style:italic">Oberthur Technologies, France</span>
+<br>
+<span style="font-style:normal">Sylvain Guilley</span>, <span style="font-style:italic">Télécom ParisTech, France</span>
+<br>
+<span style="font-style:normal">Helena Handschuch</span>, <span style="font-style:italic">CRI, USA</span>
+<br>
+<span style="font-style:normal">Naofumi Homma</span>, <span style="font-style:italic">Tohoku University, Japan</span>
+<br>
+<span style="font-style:normal">Ilya kizhvatov</span>, <span style="font-style:italic">Riscure, The Netherlands</span>
+<br>
+<span style="font-style:normal">Markus Kuhn</span>, <span style="font-style:italic">University of Cambridge, UK</span>
+<br>
+<span style="font-style:normal">Thanh-ha Le</span>, <span style="font-style:italic">Morpho, France</span>
+<br>
+<span style="font-style:normal">Victor Lomné</span>, <span style="font-style:italic">ANSSI, France</span>
+<br>
+<span style="font-style:normal">Stefan Mangard</span>, <span style="font-style:italic">Infineon, Germany</span>
+<br>
+<span style="font-style:normal">Amir Moradi</span>, <span style="font-style:italic">Ruhr-Universität Bochum, Germany</span>
+<br>
+<span style="font-style:normal">Debdeep Mukhopadhyay</span>, <span style="font-style:italic">Indian Institute of Technology Kharagpur, India</span>
+<br>
+<span style="font-style:normal">Elisabeth Oswald</span>, <span style="font-style:italic">University of Bristol, UK</span>
+<br>
+<span style="font-style:normal">Axel Poschman</span>, <span style="font-style:italic"> Nanyang Technological University, Singapore</span>
+<br>
+<span style="font-style:normal">Anand Rajan</span>, <span style="font-style:italic">Intel Corporation, USA</span>
+<br>
+<span style="font-style:normal">Denis Real</span>, <span style="font-style:italic"> DGA-MI/CELAR, France</span>
+<br>
+<span style="font-style:normal">Matthieu Rivain</span>, <span style="font-style:italic">CryptoExperts, France</span>
+<br>
+<span style="font-style:normal">Kazuo Sakiyama</span>, <span style="font-style:italic">The University of Electro-Communications Tokyo, Japan</span>
+<br>
+<span style="font-style:normal">Akashi Satoh</span>, <span style="font-style:italic">RCIS, Japan</span>
+<br>
+<span style="font-style:normal">Patrick Schaumont</span>, <span style="font-style:italic">Virginia Tech, Blacksburg, USA</span>
+<br>
+<span style="font-style:normal">Jorn-Marc Schmidt</span>, <span style="font-style:italic">IAIK Graz, Austria</span>
+<br>
+<span style="font-style:normal">François-Xavier Standaert</span>, <span style="font-style:italic">UCL, Belgium</span>
+<br>
+<span style="font-style:normal">Hugues Thiebeauld</span>, <span style="font-style:italic">RFI Global, UK</span>
+<br>
+<span style="font-style:normal">Camille Vuillaume</span>, <span style="font-style:italic">Renesas Electronics, Japan</span>
+<br>
+<span style="font-style:normal">Matthias Wagner</span>, <span style="font-style:italic">NXP, Germany</span>
+
+
+<!-- vim:se syn=html: -->
+
+<!-- ========== Page-specific contents end ========== -->
+
+</div>
+<!-- end of main content -->
+
+<!-- footer -->
+<!-- <div id="footer">$Date: 2012-07-09 00:43:37 +0200 (lun. 09 juil. 2012) $</div> -->
+<!-- end footer -->
+
+<div id="cosade_menu">
+<!--<div id="cosade_title"><abbr lang="en" title="Constructive Side-Channel Analysis and Secure Design">COSADE</abbr>'2013</div>-->
+<ul>
+<li><a href="index.html" title="Home">Home</a></li>
+<li><a href="program.html" title="Program">Program</a></li>
+<!--<li><a href="accepted.html" title="Accepted Papers">Accepted Papers</a></li>-->
+<li><a href="https://cosade.telecom-paristech.fr/cosade13/inscriptions/index.php" title="Inscriptions">Inscriptions</a></li>
+<li><a href="venue.html" title="Venue">Venue & Logistics</a></li>
+<li><a href="invited.html" title="Invited">Invited Speakers</a></li>
+<li><a href="callforshort.html" title="Call for short presentations">Call for short talk</a></li>
+<li><a href="cfp.html" title="CfP">Call for papers</a></li>
+<li><a href="cfs.html" title="CfS">Call for sponsors</a></li>
+<li><a href="committees.html" title="Committees">Committees</a></li> 
+<li><a href="about.html" title="A propos">COSADE archives</a></li>
+<li><a href="contacts.html" title="Contacts">Contacts</a></li>
+</ul>
+
+
+<br />
+<div id="cosade_title">Organised by</div>
+<center>
+<!-- -->
+<a href="http://www.telecom-paristech.fr/eng/"><img src="img/logo_telecom-paristech.png" width="90px" alt="TELECOM-ParisTech" /></a>
+<BR>
+<BR>
+<div id="cosade_title">Supported by</div>
+<a href= "http://www.mines-telecom.fr/en_accueil.html">
+<img src="img/Logo_IMT50.jpg" width="90px" alt="Institut MINES-TELECOM" /></a>
+<a href= "http://www.cnrs.fr">
+<img src="img/logo_cnrs.png" width="90px" alt="CNRS" /></a>
+<a href="http://www.tu-darmstadt.de/index.en.jsp">
+<img src="img/logo-tud.png" width="130px" alt="TU Darmstadt" /></a>
+<a href="http://www.bsi.bund.de/EN/Home/home_node.html">
+<img src="img/BSI_Web_de.gif" width="130px" alt="BSI" /></a>
+</center>
+</div>
+
+
+</body>
+</html>
+
+<!-- Activity counter, for the SVN revision to be updated: 11 -->
+
+<!-- vim:se syn=html: -->

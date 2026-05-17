@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>COSADE: Constructive Side-Channel Analysis and Secure Design 2021</title>
+<meta name="description" content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="keywords"    content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="copyright"   content="Università della Svizzera italiana" />
+<meta http-equiv="Content-Language" content="en" />
+<link media="screen" href="css/screen.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link media="print"  href="css/print.css"  type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+</head>
+<body>
+
+<div id="cosade_menu_right">
+<div style="text-align:center">
+<br />
+<a href= "http://www.springer.com/">
+<img src="img/springer_logo.jpg" height="35px" alt="SPRINGER" /></a>
+<br />
+<a href= "http://www.springer.com/lncs" target="blank">
+<img src="img/lncs.jpg" height="40px" alt="LNCS" /></a>
+<P>
+<a href= "https://haslerstiftung.ch/en" target="blank">
+<img src="img/sp-hasler.png" height="18px" alt="Hasler Stiftung" /></a> <br>
+</div>
+
+
+<div style="text-align:center">
+<!--<div id="cosade_title">Sponsored by:</div>-->
+<span style="background-color: #000000"><B><font color="#ffd700">&nbsp &nbsp GOLD SPONSORS &nbsp &nbsp </font></B></span>
+
+<a href= "http://www.FortifyIQ.com" target="blank">
+<img src="img/sp-gold-FortifyIQ.png" height="50px" alt="FortifyIQ" /></a> <br>
+
+<a href= "https://newae.com" target="blank">
+<img src="img/sp-gold-newae.png" height="50px" alt="Newae" /></a> <br>
+
+<a href= "https://www.riscure.com" target="blank">
+<img src="img/sp-gold-riscure.png" height="70px" alt="Riscure" /></a> <br>
+
+<a href= "https://www.secure-ic.com" target="blank">
+<img src="img/sp-gold-secureic.png" height="40px" alt="SECURE-IC" /></a> <br>
+
+ <br>
+<span style="background-color: #000000"><B><font color="#c0c0c0">&nbsp &nbsp SILVER SPONSORS &nbsp &nbsp </font></B></span>
+
+<a href= "https://pqshield.com" target="blank">
+<img src="img/sp-silver-pqshield.png" height="50px" alt="PQSHIELD" /></a> <br>
+
+<a href= "https://www.rambus.com" target="blank">
+<img src="img/sp-silver-rambus.png" height="50px" alt="Rambus" /></a>
+
+</div>
+
+</div>
+
+<div id="main">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- ========== Page-specific contents begin ========== -->
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  </head>
+  <body>
+
+<p style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;color: #FF0000">
+<strong>
+In accordance with Swiss entry regulation, everyone entering Switzerland must present an entry form. If you are not vaccinated or recovered, you must also show proof of a negative test.  Please check the <a href="https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/empfehlungen-fuer-reisende/quarantaene-einreisende.html">requirements to enter Switzerland</a> and ensure the compliance to them. <br> <br> In accordance with <a href="https://www.usi.ch/en/feeds/13812">Swiss regulations and USI COVID-19 campus protection provisions</a>, <a href="https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/covid-zertifikat.html">a COVID certificate</a> will be required for accessing COSADE 2021 and checks will be enforced every day at the entrance; a valid COVID certificate is also required to access restaurants, in particular the one of the social event. Face masks are also mandatory in all indoor areas of the university campus.
+</strong>
+</p>
+
+
+
+    <h1>Workshop Program</h1>
+
+
+<h2>Monday, October 25</h2>
+<h3>Conference at <a href="venue.html">USI, Lugano</a></h3>
+
+<table id="table1">
+
+<tr class="alt">
+<td>13:00</td>
+<td><h4>Registration Opens</h4></td>
+</tr>
+
+<tr>
+<td class="timecol">14:00</td>
+<td><h4>Opening and Welcome Address</h4>
+<p>
+Francesco Regazzoni, Alberto Ferrante, Subhadeep Banik (General Chairs)
+</p>
+<p>
+Shivam Bhasin, Fabrizio De Santis (Program Chairs)
+</p>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">14:15</td>
+<td><h4>Keynote 1: Massimo Alioto (National University of Singapore)</h4>
+<p>Securing the Next Trillion of Chips via In-Memory and Immersed-in-Logic Design - Beyond Traditional Design Boundaries</p>
+</tr>
+
+<tr>
+<td class="timecol">15:30</td>
+<td><h4>Coffee break</h4>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">15:55</td>
+<td><h4>Session 1: Side-Channel Attacks</h4>
+<p>
+Joseph Gravellier, Jean-Max Dutertre, Yannick Teglia and Philippe Loubet Moundi: SideLine: How Delay-Lines (May) Leak Secrets from your SoC
+</p>
+<p>
+Yaacov Belenky, Yury Kremer, Leonid Azriel, Ira Dushar, Valery Teper and Hennadii Chernyshchyk: First Full-fledged Side Channel Attack on HMAC-SHA-2
+</p>
+<p>
+Guilherme Perin, Ileana Buhan and Stjepan Picek: Learning when to stop: a mutual information approach to prevent overfitting in profiled side-channel analysis
+</p>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">17:10</td>
+<td><h4>Coffee break</h4>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">17:35</td>
+<td><h4>Session 2: Fault Attacks</h4>
+<p>
+Sayandeep Saha and Debdeep Mukhopadhyay: Transform without Encode is not sufficient for SIFA and FTA security: A Case Study
+</p>
+<p>
+Guillaume Barbu, Laurent Castelnovi and Thomas Chabrier: Generalizing Statistical Ineffective Fault Attacks in the Spirit of Side-Channel Attacks
+</p>
+</td>
+</tr>
+
+
+<tr>
+<td class="timecol">18:30</td>
+<td><h4>Welcome cocktail</h4>
+</td>
+</tr>
+
+</table>
+
+<h2>Tuesday, October 26</h2>
+<h3>Conference at <a href="venue.html">USI, Lugano</a></h3>
+
+<table id="table1">
+
+<tr class="alt">
+<td>09:00</td>
+<td><h4>Registration Opens</h4></td>
+</tr> 
+
+<tr>
+<td class="timecol">10:00</td>
+<td><h4>Keynote 2: Alberto Sangiovanni-Vincentelli (University of California at Berkeley)</h4>
+<p>
+Defending CyberPhysical Systems and Infrastructures from Cyber Attacks
+</p>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">11:15</td>
+<td><h4>Coffee break</h4>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">11:40</td>
+<td><h4>Session 3: Post-Quantum Cryptography</h4>
+<p>Aurelien Greuet, Simon Montoya and Guénael Renault: On Using RSA/ECC Coprocessor for Ideal Lattice-Based Key Exchange</p>
+<p>Novak Kaluderovic, Aymeric Genet and Natacha Linard de Guertechin: Full key recovery side-channel attack against ephemeral SIKE on the Cortex-M4</p>
+<p>Elise Tasso, Luca De Feo, Nadia El Mrabet and Simon Pontie: Resistance of Isogeny-Based Cryptographic Implementations to a Fault Attack</p>
+</td>
+</tr>
+
+
+</p>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">12:55</td>
+<td><h4>Lunch break</h4>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">14:10</td>
+<td><h4>Industrial Session 1:</h4>
+<p>
+Michael Tempelmeier: Introduction to OpenTitan -- An Open-Source Silicon Root of Trust Project
+</p>
+<p>
+Charlotte Bonte, Rosario Cammarota, Wei Dai, Joshua Fryman, Huijing Gong, Duhyeong Kim, Raghavan Kumar, Kim Laine, Poornima Lalwaney, Sanu Mathew, Nojan Sheybani, Anand Rajan, Andrew Reinders, Michael Steiner, Vikram Suresh, Sachin Taneja, Marc Trifan, Alexander Viand, Wei Wang, Wen Wang, Chris Wilkerson, and Jin Yang: Is Revolutionary Hardware for Fully Homomorphic Encryption important? What else is needed?
+</p>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">15:00</td>
+<td><h4>Coffee break</h4>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">15:25</td>
+<td><h4>Industrial Session 2:</h4>
+<p>
+Joppe W. Bos, Joost Renes, and Christine van Vredendaal: Post-Quantum Cryptography with Contemporary Co-Processors
+</p>
+<p>
+Sylvain Guilley and Sofiane Takarabt: Analyzing the Harmfulness of Glitches in the Context of Side-Channel Analysis
+</p>
+</td>
+</tr>
+<tr>
+
+
+<td class="timecol">16:20</td>
+<td><h4>Social Event</h4>
+<p>
+Visit at <a href="https://www.swissminiatur.ch/?lang=en" target=_BLANK>Swissminiatur</a> followed by Dinner at <a href="https://www.ristorantedellatorre.ch/" target=_BLANK>Ristorante della Torre</a>
+</p>
+</td>
+</tr>
+
+</table>
+
+<h2>Wednesday, October 27</h2>
+<h3>Conference at <a href="venue.html">USI, Lugano</a></h3>
+
+<table id="table1">
+<tr class="alt">
+<td>09:00</td>
+<td><h4>Registration Opens</h4></td>
+</tr>
+
+<tr>
+<td class="timecol">10:00</td>
+<td><h4>Session 4: Physical Unclonable Functions</h4>
+<p>
+Lars Tebelmann, Ulrich Kuhne, Jean-Luc Danger and Michael Pehl: Analysis and Protection of the Two-metric Helper Data Scheme
+</p>
+<p>
+Trevor Kroeger, Wei Cheng, Sylvain Guilley, Jean-Luc Danger and Naghmeh Karimi: Enhancing the Resiliency of Multi-Bit Parallel Arbiter-PUF and its Derivatives against Power Attacks
+</p>
+<p>
+
+
+<tr>
+<td class="timecol">10:50</td>
+<td><h4>Coffee break</h4>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">11:15</td>
+<td><h4>Session 5: Countermeasures</h4>
+<p>Davide Poggi, Philippe Maurine, Thomas Ordas and Alexandre Sarafianos: Protecting secure ICs against side-channel attacks by identifying and quantifying potential EM and leakage hotspots at simulation stage</p>
+<p>Nicolai Muller, Thorben Moos and Amir Moradi: Low-Latency Hardware Masking of PRINCE</p>
+<p>Balazs Udvarhelyi, Olivier Bronchain and Francois-Xavier Standaert: Security Analysis of Deterministic Re-Keying with Masking & Shuffling: Application to ISAP</p>
+<p>Agathe Houzelot, Christophe Giraud and Emmanuelle Dottax: White-Box ECDSA: Challenges and Existing Solutions</p>
+</td>
+</tr>
+
+
+<td class="timecol">12:55</td>
+<td><h4>Closing remarks</h4>
+<p>
+Francesco Regazzoni, Alberto Ferrante, Subhadeep Banik (General Chairs)
+</p>
+</td>
+</tr>
+
+<tr>
+<td class="timecol">13:00</td>
+<td><h4>Lunch</h4>
+</td>
+</tr>
+
+
+</table>
+
+
+
+    <!-- ========== Page-specific contents end ========== -->
+    <!-- end of main content -->
+  </body>
+</html>
+<footer>
+</footer>
+</div>
+
+<!-- </div> -->
+<!-- end of main content -->
+
+<div id="cosade_menu">
+<!--<div id="cosade_title"><abbr lang="en" title="Constructive Side-Channel Analysis and Secure Design">COSADE</abbr>'2021/div>-->
+<ul>
+<li><a href="index.html" title="Home">Home</a></li>
+<li><a href="cfp.html" title="CfP">Call for papers</a></li>
+<li><a href="cfs.html" title="CfS">Call for sponsors</a></li>
+<li><a href="program.html" title="Program">Program</a></li>
+<li><a href="keynotes.html" title="Keynotes">Keynotes</a></li>
+<li><a href="registration.html" title="Registration">Registration</a></li>
+<li><a href="venue.html" title="Venue">Venue & Logistics</a></li>
+<li><a href="committees.html" title="Committees">Committees</a></li>
+<li><a href="about.html" title="A propos">COSADE archives</a></li>
+<li><a href="contacts.html" title="Contacts">Contacts</a></li>
+<li><a href="proceedings.html" title="Proceedings">Proceedings</a></li>
+</ul>
+
+
+<br />
+<div id="cosade_title">Organized by</div> 
+
+<div style="text-align:center">
+
+<!-- <a href="https://www.usi.ch" target="_blank" title="Università della Svizzera italiana">
+<br>Università della Svizzera italiana<br> -->
+<img src="img/press-logo-statico-usi-orizzontale-web.png" alt="Università della Svizzera italiana" style="max-width:100%"/></a>
+
+
+<BR>
+<BR>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

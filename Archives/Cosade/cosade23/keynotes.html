@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>COSADE: Constructive Side-Channel Analysis and Secure Design 2023</title>
+<meta name="description" content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="keywords"    content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="copyright"   content="Università della Svizzera italiana" />
+<meta http-equiv="Content-Language" content="en" />
+<link media="screen" href="css/screen.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link media="print"  href="css/print.css"  type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<body>
+
+
+
+<div id="cosade_menu_right">
+  <div style="text-align:center;margin-bottom:15px;">
+    <br />
+    <a href= "http://www.springer.com/">
+    <img src="img/springer_logo.jpg" height="35px" alt="SPRINGER" /></a>
+    <br />
+    <a href= "http://www.springer.com/lncs" target="blank">
+    <img src="img/lncs.jpg" height="40px" alt="LNCS" /></a>
+  </div>
+
+  <div style="text-align:center">
+  <div style="background-color: #000000; width: 175px; margin: 0 auto;"><B><font color="#ffd700">GOLD SPONSORS</font></B></div>
+
+
+  <a href= "https://eshard.com/" target="blank">
+  <img style="margin-top:15px;" src="img/gold_eShard.png" width="175px" alt="eShard" /></a> <br>
+  
+  <a href= "https://www.gi-de.com/" target="blank">
+  <img style="margin-top:15px;" src="img/gold_GD.jpg" width="175px" alt="Giesecke+Devrient" /></a> <br>
+  
+  <a href= "https://newae.com" target="blank">
+  <img style="margin-top:15px;" src="img/gold_newae.png" width="175px" alt="Newae" /></a> <br>  
+  
+  <a href= "https://www.riscure.com/" target="blank">
+  <img style="margin-top:15px;" src="img/gold_riscure.png" height="175px" alt="Riscure" /></a> <br>
+
+  <a href= "https://www.secure-ic.com/" target="blank">
+  <img style="margin-top:15px;" src="img/gold_secure-ic.png" width="175px" alt="Secure-iC" /></a> <br>
+<!--------------------------------------------------------------------------------------------------------->
+   <br>
+  <div style="background-color: #000000; width: 175px; margin: 0 auto;"><B><font color="#c0c0c0">SILVER SPONSORS</font></B></div>
+
+  <a href= "https://www.alphanov.com/" target="blank">
+  <img style="margin-top:15px;" src="img/silver_alphanov.jpg" width="175px" alt="ALPhANOV" /></a> <br>
+  
+
+  <a href= "https://www.infineon.com/" target="blank">
+  <img style="margin-top:15px;" src="img/sliver_ifx.jpg" width="175px" alt="Infineon" /></a> <br>
+
+  <a href= "https://pqshield.com/" target="blank">
+  <img style="margin-top:15px;" src="img/silver_pqShield.png" width="175px" alt="PQShield" /></a> <br>
+
+  <a href= "https://www.siemens.com" target="blank">
+  <img style="margin-top:15px;" src="img/silver_sag.jpg" width="175px" alt="Siemens" /></a> <br>
+
+  </div>
+</div>
+
+<div id="main">
+
+<!-- ========== Page-specific contents begin ========== -->
+<h1>Invited Talks</h1>
+
+<h2 id="keynoteMendel">Keynote 1</h2>
+
+<h3>Lightweight Authenticated Encryption</h3>
+
+<h3>Speaker: Florian Mendel</h3>
+
+<h3>Abstract</h3>
+<p>
+Driven by a demand for cryptographic protection in resource-constrained embedded devices, lightweight cryptography has been actively studied in the last decades. 
+While block ciphers and hash functions have received a great deal of attention from the cryptographic community resulting in plenty of new designs, authenticated encryption schemes have been arguably less popular among researchers for a long time. 
+At the same time, message secrecy – as provided by plain encryption – is often of limited value in practice if not accompanied by message authentication showing the need for dedicated authenticated encryption schemes in the field. 
+This is also reflected by the NIST’s standardization efforts that resulted in plenty of new proposals for lightweight authenticated encryption schemes tailored for resource-constrained devices in the last few years, usually optimizing the area and power consumptions of the primitive in hardware and/or software.
+</p><p>
+Resource-constrained devices are often used in environments in which side-channel attacks need to be considered and countermeasures against the attacks need to be implemented with limited resources, which is a challenging task. 
+Today, there exist essentially two different approaches to counteract side-channel attacks. 
+The first approach works by hardening the implementation of cryptographic algorithms with techniques like hiding or masking. 
+The drawback of this approach is that the overhead for securing a cryptographic primitive against side-channel attacks might be very high and depends on the cryptographic primitive itself. 
+Therefore, in the past several ciphers have been proposed to reduce this cost. 
+For example, several of the authenticated encryption schemes submitted to the NIST standardization process have been designed with this goal in mind. 
+The second approach to counteract side-channel attacks is to design the cryptographic protocols or scheme in such a way that certain types of side-channel attacks cannot be performed on the underlying cryptographic primitive and this way significantly reducing the cost for implementing additional countermeasures. 
+An example of such an approach is leakage-resilient cryptography and fresh re-keying that has recently adapted for authenticated encryption and resulted in a number of new schemes. 
+</p><p>
+In this talk, we will review both approaches and discuss their advantages for particular use cases by means of two example Ascon and ISAP. 
+First, we will discuss Ascon that has recently selected by NIST for standardization for lightweight cryptography. 
+We show that the simple design of Ascon allows quite efficient implementations of countermeasures against side-channel attacks in both software and hardware. 
+This makes Ascon, in general, an excellent choice for applications that need some side-channel protection. 
+</p><p>
+Then we will discuss ISAP an authenticated encryption scheme based on the Ascon permutation that incorporates ideas from leakage-resilient cryptography to address several classes of side-channel attacks already on mode-level. 
+This allows very efficient implementations of the scheme with low overhead in scenarios where side-channel robustness is needed, albeit at the cost of a higher runtime compared to dedicated schemes in scenarios where this might not be needed. 
+Therefore, ISAP is best suited for applications where performance is not critical (e.g. firmware updates), but robustness against side-channel attacks is needed, and code size and area matters.
+</p><p>
+<i>This is joint work with:
+Christoph Dobraunig, Maria Eichlseder, Stefan Mangard, Bart Mennink, Robert Primas, Martin Schläffer, and Thomas Unterluggauer.</i>
+</p>
+
+<h3>Short Bio</h3>
+<p> Florian Mendel is a cryptographer and security architect at Infineon Technologies. 
+He has a PhD degree in Computer Engineering and worked for many years in research before joining Infineon Technologies in 2017. 
+Florian is well-known for his contributions in symmetric cryptography. 
+Among others he is a co-designer of the hash function Grøstl, a NIST SHA-3 finalists, and the lightweight authenticated encryption algorithms Ascon that was recently selected by NIST as new standard for lightweight cryptography.
+</p>
+
+<h2 id="keynoteDhooghe">Keynote 2</h2>
+
+<h3>Recent Developments on Threshold Implementations: Practical Aspects of Theoretical Models</h3>
+
+<h3>Speaker: Siemen Dhooghe</h3>
+
+<h3>Abstract</h3>
+<p>Ever since 1999, we have been using masking methods to counter side-channel attacks. 
+These masking techniques have significantly developed over the course of twenty years. 
+More specifically, the way we argue about their security has improved. 
+From including leakage effects such as glitches and transition effects to allowing for higher-order security and trivial composability. 
+Security models have played a central role in how we design masking methods.
+</p><p>
+In this presentation, we go over the timeline of these improvements and highlight some interesting turnarounds. 
+We then present some security models which are used in academia now, namely the probing model and the random probing model, and we present their functionality and their challenges. 
+We also present two newer models which include a bounded query model and a computational model. </p><p>
+The goal is to make people aware of some interesting problems in the field which could be tackled with the tools that we currently have. 
+We highlight the difference between problems interesting to the theoretical community and problems interesting to the practical community with the attempt to bridge the gap between the two. 
+The end goal: efficient countermeasures which have extensive provable security.
+</p>
+
+<h3>Short Bio</h3>
+<p>Siemen Dhooghe is currently a postdoc at COSIC in the KU Leuven university. 
+His research focuses on the design of side-channel and fault countermeasures in hardware and software with the goal to have practical secure and efficient solutions. 
+More specifically, his research focuses on masking and encoding techniques with the goal to have a clear understanding of their security such that costs can be minimized. 
+For example, Siemen has focused on extending the understanding of higher order threshold implementations with the result of providing second order secure maskings without the need of fresh randomness. 
+Siemen has published articles in conferences such as CHES, CARDIS,  CCS, Asiacrypt, and CT-RSA. </p>
+
+<!-------------------------------------------------------------------- -->
+
+<h1>Industrial Session</h1>
+<h2 id="industry0">Presentation 1 (Secure-IC)</h2>
+<h3>PQC-Ready Securyzr: A Full-Fledged Integrated Secure Element Complying with PQC Requirements in Terms of Firmware Management and Cryptographic Services </h3>
+<h3>Speaker: Wei Cheng </h3>
+<h3>Abstract</h3>
+<p>
+Post-quantum cryptography (PQC) is the future. 
+However, the adoption and transition to PQC do not end with the selection and standardization of PQC algorithms. 
+Secure integration with existing systems is also mandatory and it is the key to ready-to-use applications and systems.
+</p><p>
+In this presentation, I unveil Secure-IC PQC-ready Securyzr integrated Secure Element (iSE). 
+I show that PQC adoption and migration are made easy when already integrated and thus ready to use out-of-the-box in an iSE (integrated Secure Element, a.k.a security subsystem or security enclave). 
+I also detail the performances, including the fact that PQC algorithms can bring additional values, such as being faster than the pre-quantum NSA suite B algorithms (such as ECDH, ECDSA). 
+Eventually, I insist on the fact that PQC-ready Securyzr already provides compliance with Common Criteria (CC) requirements, in terms of side-channel analysis protection, FIPS 140-3 in terms of key management, and EN ETSI 303 645 &amp; NIST SP 800-193 with FW update capability.
+</p>
+<h3>Short Bio</h3>
+<p>Wei Cheng is a Post-doc R&amp;D Researcher and OSCCA Expert in cyber-security certification team at Secure-IC S.A.S., and also an Associate Researcher (Invited) at Télécom Paris. 
+He obtained his Ph.D. degree in Information and Communications in 2021 from Télécom Paris, Institut Polytechnique de Paris, France. 
+Before this, he received the B.S. degree from Wuhan University, China, and the M.E. degree from the IIE, Chinese Academy of Sciences, China. 
+He received the ICE Best PhD Thesis Prize from the Institut Polytechnique de Paris (2022).
+His research interests include information theory, side-channel analysis, and masking countermeasures (mainly on code-based masking, including inner product masking, direct sum masking, polynomial masking, and other variants) for embedded systems and secure cryptographic implementations. 
+He also works on Machine (Deep) Learning-based analysis of Physical Unclonable Functions (PUFs).
+</p>
+
+<!-------------------------------------------------------------------- -->
+<h2 id="industry1">Presentation 2 (eShard)</h2>
+<h3>SOC: Spot the Odd Circuit</h3>
+<h3>Speaker: Pierre-Yvan Liardet </h3>
+<h3>Abstract</h3>
+<p>
+Hardware attacks and IoT or mobile devices: a real threat? 
+To what extent a complex SoC, with multiple cores, dedicated hardware cryptographic instructions, cache memories, pipelining, ..., can be a realistic target for a hardware attack? 
+Are the operating frequency in gigahertz, or the technology, today in nanometers, real obstacles for fault injection and side-channel experts? 
+In this talk, I will share our experiments on this topic with one objective: <b>recover the secret key involved in the encryption or decryption of a single image taken with the camera of my phone.</b>
+</p>
+<h3>Short Bio</h3>
+<p>Pierre-Yvan is the Chief Scientist at eShard, a company based in Pessac, France, where he coordinates the expertise projects of the IC Security activity. 
+He is responsible for the R&amp;D aspects and contributes to the development of tools for evaluating resistance to hardware attacks leveraging side-channels or perturbations.
+Before joining eShard, Pierre-Yvan spent 22 years at STMicroelectronics (STM), where he worked in the Secure Micro Division as a Cryptologist Expert. 
+His contributions included specification, development, and validation of security for STM Secure ICs. 
+His work mainly focused on the security of SoCs (System on Chip) and Cryptography applied to embedded systems.
+</p>
+<p>
+Pierre-Yvan has a PhD in Computer Science and Microelectronics from the University of Montpelier (LIRM). 
+In his thesis, he proposed innovative approaches to handle Side-Channel attacks at the hardware, mathematical, and algorithmic levels. 
+He founded and directed the Cryptography and Security Laboratory (CSLab) within STMicroelectronics for almost 15 years.
+</p>
+<p>
+In 2016, he was nominated by the European Patent Office, along with his teams, for their numerous contributions in the Industry category for the Inventor of the Year 2016 Award. 
+During 2018 and 2019, involved in activities of the CooLab of STMicroelectronics, he supported business projects that resulted in the establishment of a brainstorming structure for innovation.
+</p>
+<p>
+In the past, Pierre-Yvan spent four years in SOLAC Smartcard Industries and Schlumberger Card and System as a Cryptologist, where he developed cryptographic libraries for smartcard products.
+</p>
+
+<!-------------------------------------------------------------------- -->
+
+<h2 id="industry2">Presentation 3 (Riscure)</h2>
+<h3>Riscure Vision on Post Quantum Cryptography</h3>
+<h3>Speaker: Marc Witteman</h3>
+<h3>Abstract</h3>
+<p>
+PQC is becoming a reality, now that NIST has approved the first candidate algorithms. 
+At Riscure we have followed this technology, and we are ready to help our customers to master the security of this complex topic. 
+With the long security testing experience in our evaluation lab, we know which threats are prevalent and how weaknesses can be recognized. 
+PQC products will in many cases use a mix of hardware and software features for optimal performance and flexibility. 
+Our security test tooling is designed to facilitate the detection of exploitable vulnerabilities, both in complete products, as well as in chip designs. 
+With our patented pre-silicon root cause analysis method we make it easy for customers to recognize the source of problems and experimentally find the best solutions. 
+The presentation is primarily intended for product developers who are puzzled by the complexity and variety of side channel and fault injection threats, and seek guidance on how to get security assurance for their product.
+</p>
+<h3>Short Bio</h3>
+<p>
+Marc Witteman has a long track record in the security industry. He has a MSc. degree in
+Electrical Engineering and worked for many years in research. Marc has been involved with
+a variety of security projects for over three decades and worked in the area of device
+security on both hardware and software topics.
+</p><p>
+In 2001, he founded Riscure, and in two decades, he developed the company through
+strong organic growth into a world-renowned security lab and security test tool vendor. In
+addition to the headquarters in Delft, the Netherlands, he opened offices in San Francisco
+and Shanghai, while building a unique culture and fostering a passion for security in the
+team.
+</p><p>
+As a technical entrepreneur, Marc holds both the CEO and CTO role at Riscure.
+</p>
+<!-- ========== Page-specific contents end ========== -->
+
+
+<footer>
+</footer>
+</div>
+
+<!-- </div> -->
+<!-- end of main content -->
+
+<div id="cosade_menu">
+<ul>
+<li><a href="index.html" title="Home">Home</a></li>
+<li><a href="cfp.html" title="CfP">Call for papers</a></li>
+<li><a href="cfs.html">Call for sponsors</a></li>
+<li><a href="program.html">Program</a></li>
+<li><a href="keynotes.html">Keynotes</a></li>
+<li><a href="slides.html">Slides</a></li>
+<li><a href="registration.html">Registration</a></li>
+<li><a href="venue.html" title="Venue">Venue & Logistics</a></li>
+<li><a href="committees.html" title="Committees">Committees</a></li>
+<li><a href="archives.html" title="Archives">COSADE archives</a></li>
+<li><a href="contacts.html" title="Contacts">Contacts</a></li>
+<li><a href="proceedings.html">Proceedings</a></li>
+<div id="cosade_title" style="color:black; background-color:white"><br>Organized by
+<br><br></div> 
+<div style="text-align:center;background-color:white">
+<a href="https://www.ce.cit.tum.de/en/eisec/home/" target="_blank" title="TUM, Chair of Security in Information Technology">
+<img src="img/img_TUM.png" alt="TUM" style="max-width:40%"/>
+</a><br><br><br><a href="https://www.aisec.fraunhofer.de/" target="_blank" title="Fraunhofer AISEC">
+<img src="img/img_AISEC.png" style="width:100%; height:100%;" alt="Fraunhofer AISEC" style="max-width:60%"/>
+</a>
+<div style="text-align:center">
+</ul>
+
+<br />
+
+
+
+<BR>
+<BR>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

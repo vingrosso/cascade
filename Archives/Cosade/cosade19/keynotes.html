@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>COSADE: Constructive Side-Channel Analysis and Secure Design 2019</title>
+<meta name="description" content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="keywords"    content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="copyright"   content="Télécom ParisTech" />
+<meta http-equiv="Content-Language" content="en" />
+<link media="screen" href="css/screen.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link media="print"  href="css/print.css"  type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+</head>
+<body>
+
+<div id="cosade_menu_right">
+<div style="text-align:center">
+<br />
+<a href="https://www.iacr.org/" target="blank">
+<img src="img/logo_iacr.png" alt="IACR" />
+<br />
+<br />
+<a href= "http://www.springer.com/">
+<img src="img/springer_logo.jpg" height="35px" alt="SPRINGER" /></a>
+<br />
+<a href= "http://www.springer.com/lncs" target="blank">
+<img src="img/lncs.jpg" height="40px" alt="LNCS" /></a>
+<P>
+
+
+
+<div id="cosade_title">sponsored by:</div>
+<br />
+<!-- <br />
+
+    <B><font color="lime">PLATIN SPONSORS</font></B>
+<br />
+<br /> -->
+
+    <B><font color="red">GOLD SPONSORS</font></B>
+<br />
+<br />
+<a href= "http://www.riscure.com/" target="blank"><img src="img/logo_riscure2016.jpg" height="51px" alt="Riscure"/></a>
+<br />
+<a href= "http://www.eshard.com/" target="blank"><img src="img/logo_eshard.png" width="121px" alt="eshard"/></a>
+<br />
+<a href= "https://fortifyiq.com/" target="blank"><img src="img/logo_fortifyiq.png" width="121px" alt="FortifyIQ"/></a>
+<br />
+<a href= "http://www.secure-ic.com/" target="blank"><img src="img/logo_sic.png" width="211px" alt="Secure-IC" /></a>
+<br />
+<br />
+    <B><font color="blue">SILVER SPONSORS</font></B>
+<br />
+<br />
+<a href="http://www.rambus.com/security" target="blank"><img src="img/logo_cri2016.png" height="51px" alt="Rambus" /></a>
+<br />
+<br />
+<a href="http://www.alphanov.com" target="blank"><img src="img/logo_alphanov.png" width="129px" alt="ALPhANOV" /></a>
+<br /><br />
+
+</div>
+</div>
+
+<div id="main">
+
+<!-- ========== Page-specific contents begin ========== -->
+
+<h1>Keynotes</h1>
+
+
+<!-- ========== Page-specific contents end ========== -->
+
+<!-- end of main content -->
+<h5 id="keyn1">Onur Mutlu, ETH Zurich<br>
+<b>RowHammer and Beyond</b></h5>
+<h6>Abstract:</h6>
+
+<p>
+We will discuss the RowHammer problem in DRAM, which is a prime (and
+likely the first) example of how a circuit-level failure mechanism in
+DRAM can cause a practical and widespread system security
+vulnerability.  RowHammer is the phenomenon that repeatedly accessing
+a row in a modern DRAM chip predictably causes errors in
+physically-adjacent rows. It is caused by a hardware failure mechanism
+called read disturb errors.  Building on our initial fundamental work,
+Google Project Zero demonstrated that this hardware phenomenon can be
+exploited by user-level programs to gain kernel privileges. Many other
+recent works demonstrated other attacks exploiting RowHammer,
+including remote takeover of a server vulnerable to RowHammer. We will
+analyze the root causes of the problem and examine solution
+directions. We will also discuss what other problems may be lurking in
+DRAM and other types of memories, e.g., NAND flash and Phase Change
+Memory, which can potentially threaten the foundations of reliable and
+secure systems, as the memory technologies scale to higher densities.
+<br>
+A short accompanying yet outdated paper, appearing at DATE 2017, can be 
+found here: <a href="https://people.inf.ethz.ch/omutlu/pub/rowhammer-and-other-memory-issues_date17.pdf" target="blank">
+The RowHammer Problem and Other Issues We May Face as Memory Becomes Dense, <i>Onur Mutlu ETH Zurich</i></a>
+</p>
+<h6>Bio:</h6>
+<p>Onur Mutlu is a Professor of Computer Science at ETH Zurich. He is
+also a faculty member at Carnegie Mellon University, where he
+previously held Strecker Early Career Professorship.  His current
+broader research interests are in computer architecture, systems,
+hardware security, and bioinformatics. A variety of techniques he,
+along with his group and collaborators, has invented over the years
+have influenced industry and have been employed in commercial
+microprocessors and memory/storage systems. He obtained his PhD and MS
+in ECE from the University of Texas at Austin and BS degrees in
+Computer Engineering and Psychology from the University of Michigan,
+Ann Arbor. He started the Computer Architecture Group at Microsoft
+Research (2006-2009), and held various product and research positions
+at Intel Corporation, Advanced Micro Devices, VMware, and Google. He
+received the inaugural IEEE Computer Society Young Computer Architect
+Award, the inaugural Intel Early Career Faculty Award, US National
+Science Foundation CAREER Award, Carnegie Mellon University Ladd
+Research Award, faculty partnership awards from various companies, and
+a healthy number of best paper or "Top Pick" paper recognitions at
+various computer systems, architecture, and hardware security
+venues. He is an ACM Fellow "for contributions to computer
+architecture research, especially in memory systems", IEEE Fellow for
+"contributions to computer architecture research and practice", and an
+elected member of the Academy of Europe (Academia Europaea). For more
+information, please see his webpage at <a href="https://people.inf.ethz.ch/omutlu/" target="blank"> 
+ETH Zurich</a>.
+</p>
+
+<h5 id="keyn2">Ramesh Karri, New York University<br>
+Towards High-Level Approaches to Hardware Cyber Security</h5>
+<h6>Abstract:</h6>
+<p>
+Designers use third-party intellectual property (IP) cores and 
+outsource various steps in the integrated circuit (IC) design and 
+manufacturing flow. As a result, security vulnerabilities have been 
+rising. This is forcing IC designers and end users to re-evaluate their 
+trust in ICs. If an attacker gets hold of an unprotected IC, he can 
+reverse engineer the IC and pirate the IP.  Similarly, if an attacker 
+gets hold of a design, she can insert malicious circuits and backdoors 
+into the design.<br>
+In this talk I will outline High-Level Design for Trust techniques that 
+we developed to prevent these and similar attacks: Locking/Obfuscation 
+and Secure Sourcing of IPs for High-Level Integration. 
+Locking/Obfuscation implements a built-in obfuscation mechanism in ICs 
+to prevent reverse engineering. Secure sourcing can thwart Trojan 
+insertion in 3rd party Intellectual Properties.<br>
+I will wrap up the presentation by pointing out why hardware security is 
+an essential objective from economics, security, and safety aspects and 
+offer my vision of the developing field of hardware cybersecurity.
+</p>
+<h6>Bio:</h6>
+<p>
+Ramesh Karri is a Professor of Electrical and Computer Engineering at 
+New York University. He co-directs the <a target="blank" href="http://cyber.nyu.edu" >
+NYU Center for Cyber Security</a>. He is also leads the Cyber Security thrust of 
+the NY State Center for Advanced Telecommunications Technologies at NYU. 
+He co-founded the <a target="blank" href="http://trust-hub.org">Trust-Hub</a> and organizes the 
+<a target="blank" href="https://csaw.engineering.nyu.edu/esc">Embedded Systems Challenge</a>, the 
+annual red team blue team event. Ramesh Karri has a Ph.D. in Computer 
+Science and Engineering, from the University of California at San Diego 
+and a B.E in ECE from Andhra University. His research and education 
+activities in hardware cybersecurity include trustworthy ICs; processors 
+and cyber-physical systems; security-aware computer-aided design, test, 
+verification, validation, and reliability; nano meets security; hardware 
+security competitions, benchmarks and metrics; biochip security; 
+additive manufacturing security.  He has published over 200 articles in 
+leading journals and conference proceedings.
+<br>
+Ramesh Karri's work on hardware cybersecurity received best paper award 
+nominations (ICCD 2015 and DFTS 2015), awards (ITC 2014, CCS 2013, DFTS 
+2013 and VLSI Design 2012, ACM Student Research Competition at DAC 2012, 
+ICCAD 2013, DAC 2014, ACM Grand Finals 2013, Kaspersky Challenge and 
+Embedded Security Challenge). He also received the Humboldt Fellowship 
+and the National Science Foundation CAREER Award.  Ramesh Karri 
+co-founded the IEEE/ACM Symposium on Nanoscale Architectures (NANOARCH).
+</p><footer>
+<div style="text-align:center; font-size: smaller">
+<a href="https://www.darmstadt.de/darmstadt-erleben/fotos-von-darmstadt/" target="_blank">Photos: Mathildenhöhe from Ulrich Mathias, Altes Rathaus from Alex Deppert</a> 
+</div>
+
+</footer>
+</div>
+
+<!-- </div> -->
+<!-- end of main content -->
+
+<div id="cosade_menu">
+<!--<div id="cosade_title"><abbr lang="en" title="Constructive Side-Channel Analysis and Secure Design">COSADE</abbr>'2013</div>-->
+<ul>
+<li><a href="index.html" title="Home">Home</a></li>
+<li><a href="cfp.html" title="CfP">Call for papers</a></li>
+<li><a href="cfs.html" title="CfS">Call for sponsors</a></li>
+<li><a href="program.html" title="Program">Program</a></li>
+<!--<li><a href="proceedings/" title="Proceedings">Proceedings</a></li> -->
+<!--<li><a href="invited.html" title="Invited">Invited Speakers</a></li>-->
+<li><a href="keynotes.html" title="Keynotes">Keynotes</a></li>
+<li><a href="registration.html" title="Registration">Registration</a></li>
+<li><a href="venue.html" title="Venue">Venue & Logistics</a></li>
+<!--<li><a href="/callforshort.html" title="Call for short presentations">Call for short talk</a></li>-->
+<li><a href="committees.html" title="Committees">Committees</a></li>
+<li><a href="about.html" title="A propos">COSADE archives</a></li>
+<li><a href="contacts.html" title="Contacts">Contacts</a></li>
+<li><a href="proceedings/proceedings.html" title="Proceedings">Proceedings</a></li>
+</ul>
+
+
+<br />
+<div id="cosade_title">Organized by</div> 
+
+<div style="text-align:center">
+
+<a href="https://www.tu-darmstadt.de/" target="_blank" title="Technical University of Darmstadt">
+<br>Technische Universität Darmstadt<br>
+<img src="img/tudarmstadt_logo.png" alt="the Technical University of Darmstadt" /></a>
+
+
+<BR>
+<BR>
+<div id="cosade_title">Organized in collaboration with</div>
+
+<a href="http://www.crossing.tu-darmstadt.de/" target="_blank" title="SFB 1119 CROSSING - Technische Universität Darmstadt">
+<br>SFB 1119 CROSSING Technische Universität Darmstadt<br>
+<img src="img/crossing_logo.jpg" alt="Crossing" /></a>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

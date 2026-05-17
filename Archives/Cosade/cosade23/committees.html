@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>COSADE: Constructive Side-Channel Analysis and Secure Design 2023</title>
+<meta name="description" content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="keywords"    content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="copyright"   content="Università della Svizzera italiana" />
+<meta http-equiv="Content-Language" content="en" />
+<link media="screen" href="css/screen.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link media="print"  href="css/print.css"  type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<body>
+
+
+
+<div id="cosade_menu_right">
+  <div style="text-align:center;margin-bottom:15px;">
+    <br />
+    <a href= "http://www.springer.com/">
+    <img src="img/springer_logo.jpg" height="35px" alt="SPRINGER" /></a>
+    <br />
+    <a href= "http://www.springer.com/lncs" target="blank">
+    <img src="img/lncs.jpg" height="40px" alt="LNCS" /></a>
+  </div>
+
+  <div style="text-align:center">
+  <div style="background-color: #000000; width: 175px; margin: 0 auto;"><B><font color="#ffd700">GOLD SPONSORS</font></B></div>
+
+
+  <a href= "https://eshard.com/" target="blank">
+  <img style="margin-top:15px;" src="img/gold_eShard.png" width="175px" alt="eShard" /></a> <br>
+  
+  <a href= "https://www.gi-de.com/" target="blank">
+  <img style="margin-top:15px;" src="img/gold_GD.jpg" width="175px" alt="Giesecke+Devrient" /></a> <br>
+  
+  <a href= "https://newae.com" target="blank">
+  <img style="margin-top:15px;" src="img/gold_newae.png" width="175px" alt="Newae" /></a> <br>  
+  
+  <a href= "https://www.riscure.com/" target="blank">
+  <img style="margin-top:15px;" src="img/gold_riscure.png" height="175px" alt="Riscure" /></a> <br>
+
+  <a href= "https://www.secure-ic.com/" target="blank">
+  <img style="margin-top:15px;" src="img/gold_secure-ic.png" width="175px" alt="Secure-iC" /></a> <br>
+<!--------------------------------------------------------------------------------------------------------->
+   <br>
+  <div style="background-color: #000000; width: 175px; margin: 0 auto;"><B><font color="#c0c0c0">SILVER SPONSORS</font></B></div>
+
+  <a href= "https://www.alphanov.com/" target="blank">
+  <img style="margin-top:15px;" src="img/silver_alphanov.jpg" width="175px" alt="ALPhANOV" /></a> <br>
+  
+
+  <a href= "https://www.infineon.com/" target="blank">
+  <img style="margin-top:15px;" src="img/sliver_ifx.jpg" width="175px" alt="Infineon" /></a> <br>
+
+  <a href= "https://pqshield.com/" target="blank">
+  <img style="margin-top:15px;" src="img/silver_pqShield.png" width="175px" alt="PQShield" /></a> <br>
+
+  <a href= "https://www.siemens.com" target="blank">
+  <img style="margin-top:15px;" src="img/silver_sag.jpg" width="175px" alt="Siemens" /></a> <br>
+
+  </div>
+</div>
+
+<div id="main">
+<!-- ========== Page-specific contents begin ========== -->
+
+<h1>Committees</h1>
+
+
+<h2>Steering Committee</h2>
+
+  <ul>
+   <li><span style="font-style:normal">Jean-Luc Danger</span>, <span style="font-style:italic">Télécom ParisTech, FR</span></li>
+   <li><span style="font-style:normal">Werner Schindler</span>, <span style="font-style:italic">Bundesamt für Sicherheit in der Informationstechnik (BSI), DE</span></li>
+  </ul>
+  
+<h2>General Chair</h2>
+
+<ul>
+  <li><span style="font-style:normal">Georg Sigl</span>, <span style="font-style:italic">TUM and Fraunhofer AISEC, DE</span></li>
+</ul>
+
+<h2> Program Chairs</h2>
+  <ul> 
+   <li><span style="font-style:normal">Elif Kavun</span>, <span style="font-style:italic">University of Passau, DE</span></li>
+   <li><span style="font-style:normal">Michael Pehl</span>, <span style="font-style:italic">TUM, DE</span></li>
+  </ul>
+
+<h2>Program Committee</h2>
+  <ul>
+    <li><span stlye="font-style-normal">Elham Amini </span>, <span style="font-style:italic"> TU Berlin, DE </span></li>
+    <li><span stlye="font-style-normal">Tolga Arul </span>, <span style="font-style:italic"> University of Passau, DE</span></li>
+    <li><span stlye="font-style-normal">Josep Balasch </span>, <span style="font-style:italic"> KU Leuven, BE</span></li>
+    <li><span stlye="font-style-normal">Alessandro Barenghi </span>, <span style="font-style:italic"> Politecnico di Milano, IT</span></li>
+    <li><span stlye="font-style-normal">Shivam Bhasin </span>, <span style="font-style:italic"> Temasek Labs@NTU, SG</span></li>
+    <li><span stlye="font-style-normal">Jakub Breier </span>, <span style="font-style:italic"> Silicon Austria Labs, AT</span></li>
+    <li><span stlye="font-style-normal">Olivier Bronchain </span>, <span style="font-style:italic"> NXP Belgium, BE</span></li>
+    <li><span stlye="font-style-normal">Chitchanok Chuengsatiansup </span>, <span style="font-style:italic"> The University of Adelaide, AU</span></li>
+    <li><span stlye="font-style-normal">Fabrizio De Santis </span>, <span style="font-style:italic"> Siemens AG, DE</span></li>
+    <li><span stlye="font-style-normal">Daniel Dinu </span>, <span style="font-style:italic"> Intel Corporation, US</span></li>
+    <li><span stlye="font-style-normal">Jean-Max Dutertre </span>, <span style="font-style:italic"> Ecole des Mines de Saint-Etienne, FR</span></li>
+    <li><span stlye="font-style-normal">Wieland Fischer </span>, <span style="font-style:italic"> Infineon Technologies, DE</span></li>
+    <li><span stlye="font-style-normal">Fatemeh Ganji </span>, <span style="font-style:italic"> Worcester Polytechnic Institute, US</span></li>
+    <li><span stlye="font-style-normal">Johann Heyszl </span>, <span style="font-style:italic"> Google, DE</span></li>
+    <li><span stlye="font-style-normal">Naofumi Homma </span>, <span style="font-style:italic"> Tohoku University, JP</span></li>
+    <li><span stlye="font-style-normal">Vincent Immler </span>, <span style="font-style:italic"> Oregon State University, US</span></li>
+    <li><span stlye="font-style-normal">Kimmo Järvinen </span>, <span style="font-style:italic"> Xiphera Ltd., FI</span></li>
+    <li><span stlye="font-style-normal">Jens-Peter Kaps </span>, <span style="font-style:italic"> George Mason University, US</span></li>
+    <li><span stlye="font-style-normal">Juliane Krämer </span>, <span style="font-style:italic"> University of Regensburg, DE</span></li>
+    <li><span stlye="font-style-normal">Victor Lomne </span>, <span style="font-style:italic"> NinjaLab, FR</span></li>
+    <li><span stlye="font-style-normal">Patrick Longa </span>, <span style="font-style:italic"> Microsoft, US</span></li>
+    <li><span stlye="font-style-normal">Roel Maes </span>, <span style="font-style:italic"> Intrinsic-ID, NL</span></li>
+    <li><span stlye="font-style-normal">Dominik Merli </span>, <span style="font-style:italic"> Hochschule Augsburg, DE</span></li>
+    <li><span stlye="font-style-normal">Thorben Moos </span>, <span style="font-style:italic"> Université catholique de Louvain, BE</span></li>
+    <li><span stlye="font-style-normal">Ralph Nyberg </span>, <span style="font-style:italic"> Infineon Technologies AG, DE</span></li>
+    <li><span stlye="font-style-normal">Colin O'Flynn </span>, <span style="font-style:italic"> NewAE Technology Inc., CA</span></li>
+    <li><span stlye="font-style-normal">Daniel Page </span>, <span style="font-style:italic"> University of Bristol, UK</span></li>
+    <li><span stlye="font-style-normal">Samuel Pagliarini </span>, <span style="font-style:italic"> Tallinn University of Technology (TalTech), EE</span></li>
+    <li><span stlye="font-style-normal">Stjepan Picek </span>, <span style="font-style:italic"> Radboud University, NL</span></li>
+    <li><span stlye="font-style-normal">Chester Rebeiro </span>, <span style="font-style:italic"> Indian Institute of Technology Madras, IN</span></li>
+    <li><span stlye="font-style-normal">Francesco Regazzoni </span>, <span style="font-style:italic"> ALaRI - USI, CH</span></li>
+    <li><span stlye="font-style-normal">Debapriya Basu Roy </span>, <span style="font-style:italic"> IIT Kanpur, IN </span></li>
+    <li><span stlye="font-style-normal">Pascal Sasdrich </span>, <span style="font-style:italic"> Horst Görtz Institute for IT-Security, Ruhr-University Bochum, DE</span></li>
+    <li><span stlye="font-style-normal">Tobias Schneider </span>, <span style="font-style:italic"> NXP Semiconductors, AT</span></li>
+    <li><span stlye="font-style-normal">Sujoy Sinha Roy </span>, <span style="font-style:italic"> Graz University of Technology, AT</span></li>
+    <li><span stlye="font-style-normal">Marc Stöttinger </span>, <span style="font-style:italic"> RheinMain University of Applied Science, DE</span></li>
+    <li><span stlye="font-style-normal">Ruggero Susella </span>, <span style="font-style:italic"> STMicroelectronics, CH</span></li>
+    <li><span stlye="font-style-normal">Lennert Wouters </span>, <span style="font-style:italic"> KU Leuven, BE</span></li>
+    <li><span stlye="font-style-normal">Tolga Yalcin </span>, <span style="font-style:italic"> Qualcomm Technologies Inc., US</span></li>
+    <li><span stlye="font-style-normal">Fan Zhang </span>, <span style="font-style:italic"> Zhejiang University, CN</span></li>
+</ul>
+
+<!-- ========== Page-specific contents end ========== -->
+
+<!-- end of main content -->
+<footer>
+</footer>
+</div>
+
+<!-- </div> -->
+<!-- end of main content -->
+<div id="cosade_menu">
+<ul>
+<li><a href="index.html" title="Home">Home</a></li>
+<li><a href="cfp.html" title="CfP">Call for papers</a></li>
+<li><a href="cfs.html">Call for sponsors</a></li>
+<li><a href="program.html">Program</a></li>
+<li><a href="keynotes.html">Keynotes</a></li>
+<li><a href="slides.html">Slides</a></li>
+<li><a href="registration.html">Registration</a></li>
+<li><a href="venue.html" title="Venue">Venue & Logistics</a></li>
+<li><a href="committees.html" title="Committees">Committees</a></li>
+<li><a href="archives.html" title="Archives">COSADE archives</a></li>
+<li><a href="contacts.html" title="Contacts">Contacts</a></li>
+<li><a href="proceedings.html">Proceedings</a></li>
+
+<div id="cosade_title" style="color:black; background-color:white"><br>Organized by
+<br><br></div> 
+<div style="text-align:center;background-color:white">
+<a href="https://www.ce.cit.tum.de/en/eisec/home/" target="_blank" title="TUM, Chair of Security in Information Technology">
+<img src="img/img_TUM.png" alt="TUM" style="max-width:40%"/>
+</a><br><br><br><a href="https://www.aisec.fraunhofer.de/" target="_blank" title="Fraunhofer AISEC">
+<img src="img/img_AISEC.png" style="width:100%; height:100%;" alt="Fraunhofer AISEC" style="max-width:60%"/>
+</a>
+<div style="text-align:center">
+</ul>
+
+
+<br />
+
+
+<BR>
+<BR>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

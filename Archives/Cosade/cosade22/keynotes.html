@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>COSADE: Constructive Side-Channel Analysis and Secure Design 2022</title>
+<meta name="description" content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="keywords"    content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="copyright"   content="Università della Svizzera italiana" />
+<meta http-equiv="Content-Language" content="en" />
+<link media="screen" href="css/screen.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link media="print"  href="css/print.css"  type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+</head>
+<body>
+
+
+<div id="cosade_menu_right">
+  <div style="text-align:center;margin-bottom:15px;">
+    <br />
+    <a href= "http://www.springer.com/">
+    <img src="img/springer_logo.jpg" height="35px" alt="SPRINGER" /></a>
+    <br />
+    <a href= "http://www.springer.com/lncs" target="blank">
+    <img src="img/lncs.jpg" height="40px" alt="LNCS" /></a>
+  </div>
+
+  <div style="text-align:center">
+  <div style="background-color: #000000; width: 175px; margin: 0 auto;"><B><font color="#ffd700">GOLD SPONSORS</font></B></div>
+
+  <a href= "https://www.riscure.com/" target="blank">
+  <img style="margin-top:15px;" src="img/sp-gold-riscure.jpg" width="175px" alt="Riscure" /></a> <br>
+
+  <a href= "https://www.secure-ic.com/" target="blank">
+  <img style="margin-top:15px;" src="img/sp-gold-secure-ic.png" width="175px" alt="Secure-iC" /></a> <br>
+
+ <a href= "https://newae.com" target="blank">
+  <img style="margin-top:15px;" src="img/sp-gold-newae.png" width="120px" alt="Newae" /></a> <br>  
+
+  <a href= "https://eshard.com/" target="blank">
+  <img style="margin-top:15px;" src="img/sp-gold-eshard.png" width="175px" alt="eShard" /></a> <br> 
+ <a href= "https://www.alphanov.com/" target="blank">
+  <img style="margin-top:15px;" src="img/sp-gold-alphanov.jpg" width="175px" alt="eShard" /></a> <br> 
+   <br>
+  <div style="background-color: #000000; width: 175px; margin: 0 auto;"><B><font color="#c0c0c0">SILVER SPONSORS</font></B></div>
+
+  <a href= "https://pqshield.com" target="blank">
+  <img style="margin-top:15px;" src="img/sp-silver-pqshield.png" height="60px" alt="PQSHIELD" /></a> <br>
+
+  <a href= "https://www.rambus.com" target="blank">
+  <img style="margin-top:15px;" src="img/sp-silver-rambus.png" height="55px" alt="Rambus" /></a>
+
+  <a href= "https://www.texplained.com/" target="blank">
+  <img style="margin-top:15px;" src="img/sp-silver-texplained.png" height="48px" alt="Texplained" /></a>
+
+    <a href= "https://www.nxp.com/" target="blank">
+  <img style="margin-top:15px;" src="img/sp-silver-nxp.png" height="78px" alt="NXP" /></a>
+
+  </div>
+</div>
+
+<div id="main">
+
+<!-- ========== Page-specific contents begin ========== -->
+
+<h2>Keynote 1</h2>
+
+<h3><i>Abstractions and tooling for leakage evaluation</i></h3>
+
+<h3>Speaker: Dan Page</h3>
+
+<h3>Abstract</h3>
+<p>We have an ongoing project [1] relating generally to support for cryptography on RISC-V.  A lot of the work we've done involves thinking about what the (or any) ISA could or should look like, given that it represents the abstraction layer pertinent to most cryptographic implementation tasks; examples include 
+ISEs for AES [2], a leakage oriented fence instruction [3], and ISEs for masking [4].</p>
+<p>Having done that sort of work, we started to consider abstractions for doing leakage evaluation: we collectively have mature hardware and software tools to do so of course, but, for certain use-cases and users, actually applying them arguably demands a focus at too low a level.  So, in part aiming to support 
+studies such as [5], we started to develop some tooling for high-level leakage evaluation tasks (see, e.g., [6], and, more specifically, [7]).  Conveniently, this also offers a route to exposing our ISA-related work to users without demanding, e.g., they own equipment such as a (specific) FPGA.</p>
+<p>Other view points are possible of course, but this talk will aim to explain our motivation and outline associated progress.  In part it will act as an advert: we expect the tools are, or at least could be more widely interesting and useful.</p>
+<ul>
+  <li>[1] <a href="https://www.scarv.org">https://www.scarv.org</a></li>
+  <li>[2] <a href="https://tches.iacr.org/index.php/TCHES/article/view/8729">https://tches.iacr.org/index.php/TCHES/article/view/8729</a></li>
+  <li>[3] <a href="https://tches.iacr.org/index.php/TCHES/article/view/8545">https://tches.iacr.org/index.php/TCHES/article/view/8545</a></li>
+  <li>[4] <a href="https://tches.iacr.org/index.php/TCHES/article/view/9067">https://tches.iacr.org/index.php/TCHES/article/view/9067</a>, <a href="https://eprint.iacr.org/2021/1416.pdf">https://eprint.iacr.org/2021/1416.pdf</a></li>
+  <li>[5] <a href="https://tches.iacr.org/index.php/TCHES/article/view/9294">https://tches.iacr.org/index.php/TCHES/article/view/9294</a></li>
+  <li>[6] <a href="https://github.com/scarv">https://github.com/scarv</a></li>
+  <li>[7] <a href="https://github.com/scarv/sca3s">https://github.com/scarv/sca3s</a></li>
+</ul>
+
+<h3>Short Bio</h3>
+<p>Daniel Page is currently a Lecturer within the Department of Computer Science, University of Bristol.  His research focuses on challenges in cryptographic engineering, the implementation (in hardware and/or software) of and also implementation attacks (relating to both side-channel and fault attacks) on
+cryptographic primitives and arithmetic in particular.</p>
+<img style="max-width: 250px;" src="img/daniel-page.jpg" alt="Daniel Page">
+
+<h2>Keynote 2</h2>
+
+<h3>Repurposing Wireless Stacks for In-Depth Security Analysis</h3>
+
+<h3>Speaker: Jiska Classen</h3>
+
+<h3>Abstract</h3>
+<p>Modern wireless stacks become increasingly complex. Even though they are partially standardized and documented, major parts like vendor-specific protocols and implementation details remain unknown to the public. Complexity of wireless stacks leads to reduced compatibility between vendors (e.g., AirDrop only working between Apple devices) as well as unknown security properties (e.g., if and how protocols were tested against attacks).</p>
+<p>Existing wireless stacks can be instrumented and modified. This way, researchers can explore implementations and analyze wireless ecosystems as a whole, despite being complex and closed-source. In this talk, we will demonstrate practical tools and discovered vulnerabilities. Tune in for a couple of recent demos, such as modifying Bluetooth firmware, using Bluetooth to gain code execution within Wi-Fi chips, shortening ultra-wideband distance measurements, and playing custom sounds on AirTags.</p>
+
+<h3>Short Bio</h3>
+<p>Dr.Ing. Jiska Classen is a security researcher at the Secure Mobile Networking Lab at TU Darmstadt. Her main interest are weird wireless stacks including mobile devices.</p>
+<img style="max-width: 160px;" src="img/jiska-classen.jpeg" alt="Jiska Classen">
+
+
+<!-- ========== Page-specific contents end ========== -->
+
+
+<footer>
+</footer>
+</div>
+
+<!-- </div> -->
+<!-- end of main content -->
+
+<div id="cosade_menu">
+<ul>
+<li><a href="index.html" title="Home">Home</a></li>
+<li><a href="cfp.html" title="CfP">Call for papers</a></li>
+<li><a href="cfs.html">Call for sponsors</a></li>
+<li><a href="program.html">Program</a></li>
+<li><a href="keynotes.html">Keynotes</a></li>
+<li><a href="slides.html">Slides</a></li>
+<li><a href="registration.html">Registration</a></li>
+<li><a href="venue.html" title="Venue">Venue & Logistics</a></li>
+<li><a href="committees.html" title="Committees">Committees</a></li>
+<li><a href="archives.html" title="Archives">COSADE archives</a></li>
+<li><a href="contacts.html" title="Contacts">Contacts</a></li>
+<li><a href="proceedings.html">Proceedings</a></li>
+</ul>
+
+
+<br />
+<div id="cosade_title">Organized by</div> 
+
+<div style="text-align:center">
+
+<a href="https://www.esat.kuleuven.be/cosic/" target="_blank" title="COSIC, KU Leuven">
+<img src="img/logo-cosic.png" alt="COSIC (KU Leuven)" style="max-width:60%"/>
+<img src="img/logo-kuleuven.png" alt="KU Leuven" style="max-width:60%"/>
+</a>
+
+
+<BR>
+<BR>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

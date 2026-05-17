@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>COSADE: Constructive Side-Channel Analysis and Secure Design 2019</title>
+<meta name="description" content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="keywords"    content="COSADE: Constructive Side-Channel Analysis and Secure Design" />
+<meta name="copyright"   content="Télécom ParisTech" />
+<meta http-equiv="Content-Language" content="en" />
+<link media="screen" href="css/screen.css" type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+<link media="print"  href="css/print.css"  type="text/css" rel="stylesheet" title="COSADE stylesheet" />
+</head>
+<body>
+
+<div id="cosade_menu_right">
+<div style="text-align:center">
+<br />
+<a href= "http://www.springer.com/">
+<img src="img/springer_logo.jpg" height="35px" alt="SPRINGER" /></a>
+<br />
+<a href= "http://www.springer.com/lncs" target="blank">
+<img src="img/lncs.jpg" height="40px" alt="LNCS" /></a>
+<P>
+
+
+
+<div id="cosade_title"></div>
+</div>
+</div>
+
+<div id="main">
+<!-- ========== Page-specific contents begin ========== -->
+<img class="floatleft" src="img/cosade_oeil.png" alt="symbole cosade" width="70" height="70">
+
+<p><b>Side-channel analysis (SCA) and implementation attacks</b> have become an important field of research at universities and in the industry. In order to enhance the resistance of cryptographic and security critical implementations within the design phase, constructive attacks and analyzing techniques may serve as a quality metric to optimize the design and development process. Since 2010, COSADE provides an international platform for researchers, academics, and industry participants to present their work and their current research topics. It is an excellent opportunity to exchange on new results with international experts and to initiate new collaborations and information exchange at a professional level. The workshop will feature both invited presentations and contributed talks.</p>
+
+<p>The eleventh International Workshop on Constructive Side-Channel Analysis and Secure Design will be organized and held by the Università della Svizzera italiana.</p>
+
+
+<h3>The topics of COSADE 2020 include, but are not limited to:</h3>
+<ul>
+<li><b>Implementation attacks and exploitations:</b><br>
+Side-channel analysis, fault-injection attacks, probing and read-out, hardware Trojans, cloning and counterfeiting, side-channel or fault-injection based reverse engineering
+</li>
+<li><b>Secure implementation:</b><br>
+Cryptographic blocks (including post-quantum and lightweight ciphers), random number generators, physical unclonable functions, leakage-resilient cryptography, fault-injection tolerant design, and tamper-detection
+</li>
+<li><b>Implementation attack-resilient architectures and schemes:</b><br>
+Trusted environment (Secure boot, execution, storage, isolation, virtualization, firmware update), protections against micro-architectural side-channels and covert channels, cache attacks, software-enabled implementation attacks, white-box cryptography
+</li>
+<li><b>Secure design and evaluation:</b><br>
+Security and leakage models, formal analysis of secure implementations, design automation and tools, evaluation tooling, domain-specific security analysis of e.g., IoT, medical, automotive, industrial-control systems, mobile, security analysis based on artificial intelligence
+</li>
+<li><b>Practical attacks, test platforms and open benchmarks:</b><br>
+</li>
+Practical implementation of physical attacks, practical demonstrators  of Trojan insertion, test platforms for evaluation of physical attacks, open benchmarks for hardware Trojans, physical attacks and countermeasures.
+</ul>
+
+
+<h2>Important dates</h2>
+<table align="center">
+
+  <tr>
+    <td><div style="color: #0071bc" align="right">Paper Submission deadline:</div></td>
+    <td><span style="text-decoration:">7<sup>th</sup> December 2019</span><br /></td>
+  </tr>
+
+  <tr>
+    <td><div style="color: #0071bc" align="right">Authors notification:</div></td>
+    <td>25<sup>th</sup> January 2020</td>
+   </tr>
+
+  <tr>
+    <td><div style="color: #0071bc" align="right">Final version due:</div></td>
+    <td>15<sup>th</sup> February 2020</td>
+  </tr>
+
+  <tr>
+    <td><div style="color: #0071bc" align="right"><abbr lang="en" title="">COSADE</abbr> workshop:</div></td>
+    <td><strong>1<sup>st</sup> - 3<sup>rd</sup> April 2020</strong></td>
+  </tr>
+  <!--
+  <tr>
+    <td><div style="color: #0071bc" align="right">Early bird registration until:</div></td>
+    <td>TBA</td>
+  </tr>-->
+</table>
+
+<h2>Submission</h2>
+
+Authors are invited to submit papers (PDF format) electronically by the <a href="https://www.easychair.org/conferences/?conf=cosade20">submission link</a>.
+
+<p>Submitted papers must be original, unpublished, anonymous and not submitted
+to journals or other conferences/workshops that have proceedings. 
+Submissions must be written in English, strictly follow Springer LNCS format
+(with default margins, font size, etc.) and should be at most 20 pages,
+excluding references.  Papers not meeting these guidelines risk rejection
+without consideration.  All submissions will be blind-refereed. Submission
+implies the willingness of at least one of the authors to register and 
+present the paper. The proceedings will be published in the Springer Lecture Notes 
+in Computer Science (LNCS) series. Accepted papers must follow the LNCS author instructions at:
+<a href="http://www.springer.de/comp/lncs/authors.html">http://www.springer.de/comp/lncs/authors.html</a>
+</p>
+
+<p>Submission implies the willingness of at least one of the authors to register and present the paper.</p>
+
+<h2>Proceedings</h2>
+
+<p>The proceedings will be published in the Springer Lecture Notes in Computer Science (LNCS) series</p>
+
+<!--<p>The revised selected papers have been published as <a href="http://www.springer.com/TBD">Springer LNCS volume TBD, available online</a>.</p> -->
+
+<!-- ========== Page-specific contents end ========== -->
+
+<!-- end of main content -->
+<footer>
+</footer>
+</div>
+
+<!-- </div> -->
+<!-- end of main content -->
+
+<div id="cosade_menu">
+<!--<div id="cosade_title"><abbr lang="en" title="Constructive Side-Channel Analysis and Secure Design">COSADE</abbr>'2020</div>-->
+<ul>
+<li><a href="index.html" title="Home">Home</a></li>
+<li><a href="cfp.html" title="CfP">Call for papers</a></li>
+<li><a href="cfs.html" title="CfS">Call for sponsors</a></li>
+<li><a href="program.html" title="Program">Program</a></li>
+<li><a href="keynotes.html" title="Keynotes">Keynotes</a></li>
+<li><a href="registration.html" title="Registration">Registration</a></li>
+<li><a href="venue.html" title="Venue">Venue & Logistics</a></li>
+<li><a href="committees.html" title="Committees">Committees</a></li>
+<li><a href="about.html" title="A propos">COSADE archives</a></li>
+<li><a href="contacts.html" title="Contacts">Contacts</a></li>
+<li><a href="proceedings.html" title="Proceedings">Proceedings</a></li>
+</ul>
+
+
+<br />
+<div id="cosade_title">Organized by</div> 
+
+<div style="text-align:center">
+
+<!-- <a href="https://www.usi.ch" target="_blank" title="Univesità della Svizzera italiana">
+<br>Università della Svizzera italiana<br> -->
+<img src="img/press-logo-statico-usi-orizzontale-web.png" alt="Univesità della Svizzera italiana" style="max-width:100%"/></a>
+
+
+<BR>
+<BR>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
