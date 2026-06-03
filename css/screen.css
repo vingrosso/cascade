@@ -263,7 +263,7 @@ table {
 	border-top: 2px solid #de2c24;
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding-left: 2px;
     float: left;
 	/*position: fixed;  avant fixed */
     /*top: 40px; 
