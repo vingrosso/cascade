@@ -20,6 +20,7 @@ header {
 .main_content {
     display: -webkit-flex;
     display: flex;
+    padding-right: 2px;
 }
 
 
@@ -184,6 +185,10 @@ a{
  
 a.class1{
 	font-size: 20px; 
+}
+   
+li.class1{
+	font-size: 22px; 
 }
     
 p{
