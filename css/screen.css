@@ -20,7 +20,7 @@ header {
 .main_content {
     display: -webkit-flex;
     display: flex;
-    padding-right: 2px;
+    padding-left: 5px;
 }
 
 
